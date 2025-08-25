@@ -1,0 +1,53 @@
+{
+	"names": {
+		"male": [
+			"Michael", "Christopher", "Matthew", "Joshua", "Jacob", "Nicholas",
+			"Andrew", "Daniel", "Tyler", "Joseph", "Brandon", "David", "James",
+			"Ryan", "John", "Zach", "Justin", "Will", "Anthony", "Robert", "Austin",
+			"Alexander", "Kyle", "Kevin", "Thomas", "Cody", "Jordan", "Eric", "Benjamin",
+			"Aaron", "Christian", "Samuel", "Dylan", "Steven", "Brian", "Jose",
+			"Timothy", "Nathan", "Adam", "Rick", "Patrick", "Charles", "Sean",
+			"Jason", "Cameron", "Jeremy", "Mark", "Juan", "Travis", "Jeff", "Ethan",
+			"Caleb", "Luis", "Jared", "Logan", "Hunter", "Trevor", "Evan", "Paul", "Kenneth",
+			"Connor", "Dustin", "Noah", "Carlos", "Devin", "Gabriel", "Ian", "Greg",
+			"Derek", "Corey", "Scott", "Bradley", "Jonathan"
+		],
+		"female": [
+			"Jessica", "Ashley", "Emily", "Sarah",
+			"Samantha", "Amanda", "Brittany", "Elizabeth", "Megan", "Hannah", "Kayla",
+			"Lauren", "Stephanie", "Rachel", "Jennifer", "Nicole", "Alexis", "Victoria",
+			"Amber", "Alyssa", "Courtney", "Rebecca", "Danielle", "Jasmine", "Brianna",
+			"Katherine", "Alexandra", "Madison", "Morgan", "Melissa", "Michelle", "Kelsey",
+			"Chelsea", "Anna", "Kim", "Tiffany", "Olivia", "Mary", "Christina", "Allison",
+			"Abigail", "Heather", "Haley", "Maria", "Kaitlyn", "Laura", "Erin", "Andrea",
+			"Natalie", "Brooke", "Julia", "Emma", "Vanessa", "Erica", "Kelly", "Kristen",
+			"Marissa", "Amy", "Crystal", "Paige", "Cassandra", "Gabrielle", "Katie",
+			"Lindsey", "Destiny", "Kathryn", "Jacqueline", "Shannon", "Jenna", "Angela",
+			"Savannah", "Miranda", "Barbara"
+		]
+	},
+	"topics": {
+		"the election results": "The election results are ",
+		"climate policies": "The city's climate policies are ",
+		"the housing crisis": "The mayor's decision about the housing crisis is ",
+		"jurisdiction": "The jurisdiction in our district is ",
+		"the access to public transport": "Our public transport is ",
+		"the government's measures against school shootings": "The way our country counteracts school shootings is  ",
+		"women's access to reproductive rights": "Women's access to reproductive rights is ",
+		"animal rights": "The keeping of animals in agriculture is ",
+		"free speech policies on Twitter": "Free speech policies on Twitter are ",
+		"immigration laws": "Our immigration laws are "
+	},
+	"expressions": {
+			"5": ["amazing", "great"],
+			"4": ["decent", "pretty good"],
+			"3": ["interesting", "okay"],
+			"2": ["rather bad", "poor"],
+			"1": ["awful", "terrible"]
+		},
+	"conversations": {
+		"informational": " wants to share {pron_poss} opinion and wants to be honest about it.",
+		"social": " wants to avoid possible conflicts.",
+		"mixed": " wants to share {pron_poss} opinion but avoid possible conflicts."
+	}
+}
