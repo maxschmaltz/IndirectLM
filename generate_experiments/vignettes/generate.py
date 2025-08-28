@@ -2,10 +2,10 @@ import json
 import random
 from typing import Literal, Tuple
 
-with open("generate_experiments/template.txt") as f:
+with open("generate_experiments/vignettes/template.txt") as f:
 	_template = f.read()
 
-with open("generate_experiments/vignette_elements.json") as f:
+with open("generate_experiments/vignettes/elements.json") as f:
 	_elements = json.load(f)
 
 
@@ -22,7 +22,6 @@ def build_vignette(
 	opinion_a: int,
 	opinion_b: int,
 	goal: Literal["informational", "social", "mixed"],
-	target: Literal["A", "B", "C", "D", "E"]
 ) -> str:
 	
 	# names are generated on demand
@@ -65,20 +64,18 @@ def build_vignette(
 		hearts_b=hearts_b,
 		conversational_goal=conversational_goal,
 		topic_extended=topic_extended,
-		options=options,
-		target=target
+		options=options
 	)
 
 	return vignette
 
 
 if __name__ == "__main__":
-	# example usage
+	# # test
 	topic_item = random.choice(list(_elements["topics"].items()))
 	opinion_a = random.choice([1, 5])
 	opinion_b = random.choice([1, 5])
 	goal = random.choice(["informational", "social", "mixed"])
-	target = random.choice(["A", "B", "C", "D", "E"])
 
-	vignette = build_vignette(topic_item, opinion_a, opinion_b, goal, target)
+	vignette = build_vignette(topic_item, opinion_a, opinion_b, goal)
 	print(vignette)
