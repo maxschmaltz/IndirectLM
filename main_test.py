@@ -13,6 +13,8 @@ with open("data/prompts.json", encoding="utf-8") as f:
 # test experiment with no profiles and hearts
 def main():
 
+    get_last_token_prob("answer A", models["vllm"]["qwen3"])
+
     out = []
 
     trial_data =  prompts["no_profiles_hearts"]
@@ -24,3 +26,7 @@ def main():
         metadata = trial_items["metadata"]
 
         pass
+
+
+if __name__ == "__main__":
+    main()

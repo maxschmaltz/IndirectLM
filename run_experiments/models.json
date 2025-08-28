@@ -1,5 +1,12 @@
 {
-    "llama": "meta/llama-3.3-70b-instruct",
-    "mistral": "nvidia/mistral-nemo-minitron-8b-base",
-    "gpt": "davinci-002"
+    "ollama_deprecated":
+    {
+        "qwen3": "qwen3:8b",
+        "qwen25": "qwen2.5:latest",
+        "llama32": "llama3.2:latest"
+    },
+    "vllm":
+    {
+        "qwen3": "Qwen/Qwen3-8B"
+    }
 }

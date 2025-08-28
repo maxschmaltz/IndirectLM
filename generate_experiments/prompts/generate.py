@@ -1,7 +1,7 @@
 import json
 from itertools import product
 import random
-from typing import Literal, List, Optional
+from typing import Literal, List
 
 from generate_experiments.vignettes.generate import build_vignette, _elements
 from generate_experiments.templates import (
