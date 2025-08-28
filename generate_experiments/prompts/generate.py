@@ -64,7 +64,14 @@ def build_trial(
 			opinion_hint=opinion_hint,
 			vignette=vignette
 		)
-		trial_items.append(prompt)
+		trial_items.append({
+			"prompt": prompt,
+			"metadata": {
+				"match": match,
+				"conversational_goal": conversational_goal,
+				"is_positive": is_positive
+			}
+		})
 
 	return system_message, trial_items
 
