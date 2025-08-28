@@ -18,8 +18,7 @@ def main() -> None:
 
 		data = generate_prompts(
 			use_profiles=use_profiles,
-			mode=mode,
-			output_file=output_file
+			mode=mode
 		)
 
 		key = f"{'with' if use_profiles else 'no'}_profiles_{mode}"

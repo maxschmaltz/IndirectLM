@@ -15,36 +15,42 @@ from generate_experiments.templates import (
 
 def build_trial(
 	*,
-	profile: Optional[str]="",
+	profile: str,
 	mode: Literal["plain", "hearts"]="plain"
 ) -> List[str]:
 	
-	params = []
-	# design parameters: 2 x 3 x 2
-	for match, conversational_goal, is_positive in product(
-		[True, False],  # match
-		["informational", "social", "mixed"],  # conversational_goal
-		[True, False]  # is_positive
-	):
-		params.append((match, conversational_goal, is_positive))
-
+	used_names = []
+	trial_items = []
+	
 	opinion_hint = HEARTS_HINT if mode == "hearts" else PLAIN_HINT
 	system_message = SYSTEM_MESSAGE_TEMPLATE.format(
 		profile=profile,
 		opinion_hint=opinion_hint
 	)
 
-	# we have to sample 10 items for each trial
-	params = random.choices(params, k=10)
-	random.shuffle(params)
-
-	# shuffle topics (we have 10, one per items)
 	topic_items = list(_elements["topics"].items())
 	random.shuffle(topic_items)
 
-	used_names = []
-	trial_items = []
-	for i, (match, conversational_goal, is_positive) in enumerate(params):
+	# design parameters: 2 x 3 x 2
+	param_space = [
+		[True, False],  # match
+		["informational", "social", "mixed"],  # conversational_goal
+		[True, False]  # is_positive
+	]
+
+	# if no profile, we want to explore the whole space with different topics
+	# since we will run a single trial
+	param_space.append(topic_items if profile == "" else [None])
+		
+	# sample 10 items for each trial if using profiles (following the original design)
+	drop_indices = random.sample(range(12), k=2) if profile else []
+	for i, (match, conversational_goal, is_positive, topic_item) in enumerate(product(*param_space)):
+
+		if i in drop_indices:
+			topic_items.insert(i, None)	# make indices match
+			continue
+		if not topic_item:
+			topic_item = topic_items[i]
 
 		# factorize opinions
 		opinion_a = 5 if is_positive else 1
@@ -52,7 +58,7 @@ def build_trial(
 
 		# build vignette
 		vignette = build_vignette(
-			topic_item=topic_items[i],
+			topic_item=topic_item,
 			opinion_a=opinion_a,
 			opinion_b=opinion_b,
 			goal=conversational_goal,
@@ -79,8 +85,7 @@ def build_trial(
 def generate_prompts(
 	*,
 	use_profiles: bool,
-	mode: Literal["plain", "hearts"],
-	output_file: str
+	mode: Literal["plain", "hearts"]
 ) -> None:
 	
 	if use_profiles:

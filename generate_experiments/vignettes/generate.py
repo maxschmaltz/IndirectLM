@@ -16,6 +16,10 @@ def get_random_name(
 	used_names: List[str]
 ) -> str:
 	name_pool = _elements["names"][gender]
+	available_names = list(set(name_pool) - set(used_names))
+	if not available_names:
+		# unique names exhausted, allow reuse
+		used_names = [used_names[-1]]	# keep the last used name to avoid immediate reuse
 	return random.choice(list(set(name_pool) - set(used_names)))
 
 
