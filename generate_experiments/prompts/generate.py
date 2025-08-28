@@ -1,92 +1,107 @@
-import numpy as np
-from scipy.stats import skewnorm
-from typing import Literal
+import json
+from itertools import product
+import random
+from typing import Literal, List, Optional
 
-with open("generate_experiments/prompts/template.txt") as f:
-	_template = f.read()
-
-
-# Since our LM(s) should be compared to human data, we need to prompt them to simulate
-# the characteristics of the participants:
-# 	Experiment 2 was designed to assess how the communicative goal, the actual opinion of the speaker,
-# 	and an assumption about the listener’s belief affect utterance choices. We collected data
-# 	from 98 US-English-speaking participants recruited via Prolific
-# 	(45 female, 52 male, 1 person preferred not to report gender; age range 18–76, mean = 40, median = 35).
-# 	Data from seven participants were excluded since they reported that they did not fully understand
-# 	the instructions. Thus, data from 91 participants were entered into the analysis.
-N_FEMALE = 45
-N_MALE = 52
-N_OTHER = 1
-_n_participants = N_FEMALE + N_MALE + N_OTHER
-_gender_p = [N_FEMALE / _n_participants, N_MALE / _n_participants, N_OTHER / _n_participants]
-MIN_AGE = 18
-MAX_AGE = 76
-MEAN_AGE = 40
-MEDIAN_AGE = 35
-_age_skewness = MEAN_AGE - MEDIAN_AGE  # right tail is longer
-_age_sd = 15  # rough estimate based on range, not reported in paper
+from generate_experiments.vignettes.generate import build_vignette, _elements
+from generate_experiments.templates import (
+	PROFILE_TEMPLATE,
+	HEARTS_HINT,
+	PLAIN_HINT,
+	SYSTEM_MESSAGE_TEMPLATE,
+	PROMPT_TEMPLATE
+)
 
 
-def get_random_gender() -> Literal["male ", "female ", ""]:
-	# TODO: later replicate with absolute numbers (45 female, 52 male, 1 other)?
-	return np.random.choice(["male ", "female ", ""], p=_gender_p)
+def build_trial(
+	*,
+	profile: Optional[str]="",
+	mode: Literal["plain", "hearts"]="plain"
+) -> List[str]:
+	
+	params = []
+	# design parameters: 2 x 3 x 2
+	for match, conversational_goal, is_positive in product(
+		[True, False],  # match
+		["informational", "social", "mixed"],  # conversational_goal
+		[True, False]  # is_positive
+	):
+		params.append((match, conversational_goal, is_positive))
 
-
-def get_random_age() -> int:
-	age = skewnorm.rvs(a=_age_skewness, loc=MEAN_AGE, scale=_age_sd, size=1)[0]
-    # clip to the allowed range
-	return int(np.clip(age, MIN_AGE, MAX_AGE))
-
-
-def get_prompt(
-	gender: str,
-	age: int,
-	vignette: str,
-	target: Literal["A", "B", "C", "D", "E"]
-) -> str:
-	prompt = _template.format(
-		age=age,
-		gender=gender,
-		vignette=vignette,
-		target=target
+	opinion_hint = HEARTS_HINT if mode == "hearts" else PLAIN_HINT
+	system_message = SYSTEM_MESSAGE_TEMPLATE.format(
+		profile=profile,
+		opinion_hint=opinion_hint
 	)
-	return prompt
+
+	# we have to sample 10 items for each trial
+	params = random.choices(params, k=10)
+	random.shuffle(params)
+
+	# shuffle topics (we have 10, one per items)
+	topic_items = list(_elements["topics"].items())
+	random.shuffle(topic_items)
+
+	used_names = []
+	trial_items = []
+	for i, (match, conversational_goal, is_positive) in enumerate(params):
+
+		# factorize opinions
+		opinion_a = 5 if is_positive else 1
+		opinion_b = opinion_a if match else (5 - opinion_a) + 1
+
+		# build vignette
+		vignette = build_vignette(
+			topic_item=topic_items[i],
+			opinion_a=opinion_a,
+			opinion_b=opinion_b,
+			goal=conversational_goal,
+			mode=mode,
+			used_names=used_names
+		)
+		
+		prompt = PROMPT_TEMPLATE.format(
+			opinion_hint=opinion_hint,
+			vignette=vignette
+		)
+		trial_items.append(prompt)
+
+	return system_message, trial_items
 
 
-if __name__ == "__main__":
-	# test
-	gender = get_random_gender()
-	age = get_random_age()
-	vignette = """\
-Elizabeth wants to discuss immigration laws with Timothy.
+def generate_prompts(
+	*,
+	use_profiles: bool,
+	mode: Literal["plain", "hearts"],
+	output_file: str
+) -> None:
+	
+	if use_profiles:
+		# 97 profiles downloaded from https://osf.io/nvrh9?view_only=86a0546483354ef49ad37c58e2cb4f0f
+		# since answers from 6 participants were excluded and we don't know which ones,
+		# we excluded 6 random profiles
+		with open("generate_experiments/prompts/profiles.json") as f:
+			_profiles = json.load(f)
+			profiles = [
+				PROFILE_TEMPLATE.format(
+					age=profile[0],
+					gender=profile[1]
+				)
+				for profile in _profiles
+			]
+		random.shuffle(profiles)
+	else:
+		profiles = [""]
 
+	out_data = []
+	for profile in profiles:
+		system_message, trial_items = build_trial(
+			profile=profile,
+			mode=mode
+		)
+		out_data.append({
+			"system_message": system_message,
+			"trial_items": trial_items
+		})
 
-Here's how Elizabeth feels about the issue:
-
-Strongly negative       ❤️ ❤️ ❤️ ❤️ ❤️       Strongly positive
-
-
-Elizabeth thinks this is how Timothy feels about it, but she is not sure:
-
-Strongly negative       ❤️ ♡ ♡ ♡ ♡       Strongly positive
-
-
-Elizabeth  wants to avoid possible conflicts.
-What would Elizabeth say?
-
-A: Our immigration laws are  awful.
-B: Our immigration laws are  rather bad.
-C: Our immigration laws are  okay.
-D: Our immigration laws are  pretty good.
-E: Our immigration laws are  amazing.
-
-"""
-	target = "D"
-
-	prompt = get_prompt(
-		gender=gender,
-		age=age,
-		vignette=vignette,
-		target=target
-	)
-	print(prompt)
+	return out_data

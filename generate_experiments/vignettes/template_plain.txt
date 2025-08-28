@@ -1,8 +1,0 @@
-{name_a} wants to discuss {topic} with {name_b}.
-{name_a} feels {hearts_a} about the issue.
-{name_a} thinks that {name_b} feels {hearts_b} about it, but {pron_nom} is not sure.
-
-{name_a} {conversational_goal}
-What would {name_a} say?
-
-{options}

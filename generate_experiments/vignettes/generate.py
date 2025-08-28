@@ -2,11 +2,10 @@ import json
 import random
 from typing import Literal, Tuple, List, Optional
 
-with open("generate_experiments/vignettes/template_plain.txt") as f:
-	_template_plain = f.read()
-
-with open("generate_experiments/vignettes/template_hearts.txt") as f:
-	_template_hearts = f.read()
+from generate_experiments.templates import (
+    TEMPLATE_VIGNETTE_PLAIN,
+    TEMPLATE_VIGNETTE_HEARTS
+)
 
 with open("generate_experiments/vignettes/elements.json") as f:
 	_elements = json.load(f)
@@ -14,7 +13,7 @@ with open("generate_experiments/vignettes/elements.json") as f:
 
 def get_random_name(
 	gender: Literal["male", "female"],
-	used_names: Optional[List[str]] = []
+	used_names: List[str]
 ) -> str:
 	name_pool = _elements["names"][gender]
 	return random.choice(list(set(name_pool) - set(used_names)))
@@ -22,7 +21,7 @@ def get_random_name(
 
 def get_opinion(
 	opinion: int,
-	mode: Literal["plain", "hearts"] = "plain"
+	mode: Literal["plain", "hearts"]
 ) -> str:
 	if mode == "plain":
 		return _elements["expressions"][str(opinion)][0]
@@ -36,17 +35,17 @@ def build_vignette(
 	opinion_a: int,
 	opinion_b: int,
 	goal: Literal["informational", "social", "mixed"],
-	mode: Literal["plain", "hearts"] = "plain",
-	used_names: Optional[List[str]] = []
+	mode: Literal["plain", "hearts"],
+	used_names: Optional[List[str]]=[]
 ) -> str:
 	
 	# names are generated on demand
 	gender_a = random.choice(["male", "female"])
-	name_a = get_random_name(gender_a, used_names)
+	name_a = get_random_name(gender_a, used_names=used_names)
 	pron_nom, pron_poss = ("she", "her") if gender_a == "female" else ("he", "his")
 
 	gender_b = random.choice(["male", "female"])
-	name_b = get_random_name(gender_b, used_names + [name_a])
+	name_b = get_random_name(gender_b, used_names=used_names + [name_a])
 
 	used_names.extend([name_a, name_b])
 
@@ -68,7 +67,7 @@ def build_vignette(
 		)
 		options += f"{id}: {topic_extended} {expression}.\n"
 
-	template = _template_plain if mode == "plain" else _template_hearts
+	template = TEMPLATE_VIGNETTE_PLAIN if mode == "plain" else TEMPLATE_VIGNETTE_HEARTS
 
 	# build the vignette
 	vignette = template.format(

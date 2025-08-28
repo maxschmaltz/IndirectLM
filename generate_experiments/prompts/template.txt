@@ -1,9 +1,0 @@
-You are a {age} years old {gender}US-English speaker participating in a linguistic experiment. In the experiment, small dialogues of two persons on a certain topic will be given to you. The persons might have matching or mismatching opinion on the topic. You task is to pick the most probable utterance of the first person.
-Start!
-
-===========================
-
-{vignette}
-===========================
-
-Your answer is {target}
