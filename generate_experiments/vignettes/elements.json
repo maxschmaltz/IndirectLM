@@ -39,11 +39,11 @@
 		"immigration laws": "Our immigration laws are "
 	},
 	"expressions": {
-			"5": ["amazing", "great"],
-			"4": ["decent", "pretty good"],
-			"3": ["interesting", "okay"],
-			"2": ["rather bad", "poor"],
-			"1": ["awful", "terrible"]
+			"5": ["strongly positive", ["amazing", "great"]],
+			"4": ["positive", ["decent", "pretty good"]],
+			"3": ["neutral", ["interesting", "okay"]],
+			"2": ["negative", ["rather bad", "poor"]],
+			"1": ["strongly negative", ["awful", "terrible"]]
 		},
 	"conversations": {
 		"informational": " wants to share {pron_poss} opinion and wants to be honest about it.",
