@@ -1,0 +1,5 @@
+{
+    "llama": "meta/llama-3.3-70b-instruct",
+    "mistral": "nvidia/mistral-nemo-minitron-8b-base",
+    "gpt": "davinci-002"
+}

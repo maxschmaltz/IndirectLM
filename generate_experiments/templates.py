@@ -6,7 +6,7 @@ TEMPLATE_VIGNETTE_PLAIN = """\
 {name_a} {conversational_goal} \
 What would {name_a} say?
 
-{options} \
+{options}\
 """
 
 
@@ -22,7 +22,7 @@ Strongly negative	{hearts_b}	Strongly positive
 {name_a} {conversational_goal} \
 What would {name_a} say?
 
-{options} \
+{options}\
 """
 
 
