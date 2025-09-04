@@ -45,3 +45,5 @@ yarn-error.log*
 *.swo
 .idea/
 *.iml
+
+/papers
