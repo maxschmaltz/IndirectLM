@@ -1,12 +1,3 @@
 {
-    "ollama_deprecated":
-    {
-        "qwen3": "qwen3:8b",
-        "qwen25": "qwen2.5:latest",
-        "llama32": "llama3.2:latest"
-    },
-    "vllm":
-    {
-        "qwen3": "Qwen/Qwen3-8B"
-    }
+    "qwen3": "Qwen/Qwen3-8B"
 }
