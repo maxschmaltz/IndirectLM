@@ -1,4 +1,7 @@
+import re
+import json
 import numpy as np
+from typing import List
 
 from run_experiments.utils import get_last_token_prob
 
@@ -20,3 +23,27 @@ def trial(
 
     prob_distr = target_probs / target_probs.sum()
     return prob_distr
+
+
+def run_trials(
+    model_name: str,
+    inputs: List[dict]
+):
+    for input_data in inputs:
+        system_message = input_data["system_message"]
+        for trial_item in input_data["trial_items"]:
+            prompt = trial_item["prompt"]
+            prompt_text = system_message + prompt
+            prob_distr = trial(prompt_text, model_name)
+            # change in place
+            trial_item["prob_distr"] = prob_distr
+
+
+def run_experiment(model_name: str):
+    with open("data/prompts.json", encoding="utf-8") as f:
+        all_inputs = json.load(f)
+    for _, inputs in all_inputs:
+        run_trials(model_name, inputs)
+    model_name_label = re.sub(r"[^a-zA-Z0-9]+", "_", model_name)
+    with open(f"data/prompts_{model_name_label}.json", "w", encoding="utf-8") as f:
+        json.dump(all_inputs, f, ensure_ascii=False, indent=4)
