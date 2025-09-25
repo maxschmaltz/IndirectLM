@@ -3,14 +3,22 @@ from itertools import product
 import random
 from typing import Literal, List
 
-from generate_experiments.vignettes.generate import build_vignette, _elements
-from generate_experiments.templates import (
+from generate.vignettes.generate import build_vignette, _elements
+from generate.templates import (
 	PROFILE_TEMPLATE,
 	HEARTS_HINT,
 	PLAIN_HINT,
 	SYSTEM_MESSAGE_TEMPLATE,
 	PROMPT_TEMPLATE
 )
+
+
+def reconstruct_trial(
+	*,
+	
+	mode: Literal["plain", "hearts"]="plain"
+):
+	pass
 
 
 def build_trial(

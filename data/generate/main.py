@@ -2,7 +2,7 @@ import os
 import json
 from itertools import product
 
-from generate_experiments.prompts.generate import generate_prompts
+from generate.prompts.generate import generate_prompts
 
 
 def main() -> None:

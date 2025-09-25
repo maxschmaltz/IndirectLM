@@ -2,7 +2,7 @@ import json
 import random
 from typing import Literal, Tuple, List, Optional
 
-from generate_experiments.templates import (
+from generate.templates import (
     TEMPLATE_VIGNETTE_PLAIN,
     TEMPLATE_VIGNETTE_HEARTS
 )
