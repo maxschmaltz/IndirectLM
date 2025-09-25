@@ -1,15 +1,15 @@
 import os
 import json
 
-with open("data/vignettes/elements.json") as f:
+with open("data/orig/vignette_elements.json") as f:
 	_elements = json.load(f)
 
 
 def main() -> None:
 
 	# https://osf.io/nvrh9?view_only=86a0546483354ef49ad37c58e2cb4f0f
-	input_folder = "data/exp_2_speaker"
-	output_file = "data/exp_2_speaker.json"
+	input_folder = "data/orig/exp_2_speaker"
+	output_file = "data/orig/exp_2_speaker.json"
 
 	exp2_data = []
 	for filename in os.listdir(input_folder):
