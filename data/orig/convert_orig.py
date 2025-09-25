@@ -1,9 +1,6 @@
 import os
 import json
 
-with open("data/orig/vignette_elements.json") as f:
-	_elements = json.load(f)
-
 
 def main() -> None:
 
@@ -47,25 +44,35 @@ def main() -> None:
 
 				# finally build trials, combining the above info
 				trials = []
-				for topic, opinion, behaviour, adjective, response in zip(
+				for topic, opinion, behaviour, adjective_seq, response in zip(
 					topics, opinions, behaviours, adjectives, responses
 				):
-					# mapping from the topic code to the text
-					topic_extended = _elements["topics"][topic.strip()]
 					# opinions are represented as a string of two comma-separated ints
-					ind_oa, ind_ob = map(int, opinion.strip().split(","))
-					# map the opinion ints to the corresponding adjectives
-					opinion_a = adjective.split(",")[ind_oa - 1]
-					opinion_b = adjective.split(",")[ind_ob - 1]
+					opinion_a, opinion_b = map(int, opinion.strip().split(","))
+					# # map the opinion ints to the corresponding adjectives
+					# opinion_a = adjective.split(",")[ind_oa - 1]
+					# opinion_b = adjective.split(",")[ind_ob - 1]
 					# only the A's name is mentioned
-					name_a = behaviour.split()[0]	
+					name_a = behaviour.split()[0]
+					# get goal from behaviour
+					# TODO: this makes souble work since the same
+					# str will be reconstructed back, but that would
+					# allow to unify the workflow
+					if "wants to avoid possible conflicts" in behaviour:
+						goal = "social"
+					elif "wants to be honest" in behaviour:
+						goal = "informational"
+					else:
+						goal = "mixed"
 					trials.append({
-						"topic": topic_extended,
+						"topic": topic.strip(),
 						"opinion_a": opinion_a,
 						"opinion_b": opinion_b,
+						"adjectives": adjective_seq.strip().split(","),
 						"name_a": name_a,
-						"name_b": None,	# placeholder, will be filled in later
-						"behaviour": behaviour.strip(),
+						# "name_b": None,	# placeholder, will be filled in later
+						# "behaviour": behaviour.strip(),
+						"goal": goal,
 						"response": response.strip()
 					})
 				# Build dictionary for this file
