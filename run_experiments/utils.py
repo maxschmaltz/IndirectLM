@@ -2,12 +2,10 @@ import requests
 
 # running vLLM, make sure to have completed the setup steps in README.md
 BASE_URL = "http://0.0.0.0:8000/v1"
+MODEL_NAME = "Qwen/Qwen3-8B"
 
 
-def get_last_token_prob(
-    prompt_text: str,
-    model_name: str
-) -> tuple[str, float]:
+def get_last_token_prob(prompt_text: str) -> tuple[str, float]:
     
     # use the completions endpoint with logprobs to get token probabilities
     api_key = "not-required"
@@ -17,7 +15,7 @@ def get_last_token_prob(
         "Authorization": f"Bearer {api_key}"
     }
     payload = {
-        "model": model_name,    # pulls model from HF
+        "model": MODEL_NAME,    # pulls model from HF
         "prompt": prompt_text,
         "temperature": 0,
         "max_tokens": 1,    # we don't want to generate anything, set min
