@@ -1,7 +1,7 @@
 import aiohttp
 import asyncio
 
-semaphore = asyncio.Semaphore(32)  # limit concurrent requests
+semaphore = asyncio.Semaphore(64)  # limit concurrent requests
 
 # running vLLM, make sure to have completed the setup steps in README.md
 BASE_URL = "http://0.0.0.0:8000/v1"
