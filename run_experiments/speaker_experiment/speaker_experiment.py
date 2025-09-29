@@ -3,7 +3,7 @@ import numpy as np
 from typing import List, Optional
 from tqdm import tqdm
 
-from run_experiments.utils import get_last_token_prob
+from run_experiments.utils import get_last_token_prob, MODEL_NAME
 import asyncio
 
 
@@ -49,5 +49,6 @@ async def main():
             pbar = tqdm(total=total, desc=f"{o_key}/{f_key}")
             await run_trials(inputs, pbar=pbar)  # in-place change
             pbar.close()
-    with open("data/out/prompts_speaker_exp.json", "w", encoding="utf-8") as f:
+    _model_name = MODEL_NAME.split("/")[-1]
+    with open(f"data/out/prompts_speaker_exp_{_model_name}.json", "w", encoding="utf-8") as f:
         json.dump(all_inputs, f, ensure_ascii=False, indent=4)
