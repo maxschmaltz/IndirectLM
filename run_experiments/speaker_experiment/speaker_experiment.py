@@ -31,8 +31,12 @@ async def run_trials(inputs: List[dict], pbar: Optional[tqdm] = None):
                     prompt_text = system_message + prompt
                     prob_distr = await trial(prompt_text, pbar=pbar)
                     trial_item["prob_distr"] = prob_distr
+                    # retrieve prediction
+                    pred = np.argmax(prob_distr) + 1  # 1-indexed
+                    trial_item["pred"] = int(pred)
                 except Exception as e:
                     trial_item["prob_distr"] = [0.0] * 5
+                    trial_item["pred"] = None
                     trial_item["message"] = str(e)
 
 
