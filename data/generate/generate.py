@@ -147,7 +147,8 @@ def reconstruct_experiment(
 			"metadata": {
 				"match": trial["opinion_a"] == trial["opinion_b"],
 				"conversational_goal": trial["goal"],
-				"is_positive": trial["opinion_a"] == 5
+				"is_positive": trial["opinion_a"] == 5,
+				"response": trial["response"]
 			}
 		})
 

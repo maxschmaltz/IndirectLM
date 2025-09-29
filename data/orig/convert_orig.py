@@ -1,4 +1,5 @@
 import os
+import re
 import json
 
 
@@ -49,6 +50,8 @@ def main() -> None:
 				):
 					# opinions are represented as a string of two comma-separated ints
 					opinion_a, opinion_b = map(int, opinion.strip().split(","))
+					# parse adjectives
+					adjective_seq = adjective_seq.strip().split(",")
 					# # map the opinion ints to the corresponding adjectives
 					# opinion_a = adjective.split(",")[ind_oa - 1]
 					# opinion_b = adjective.split(",")[ind_ob - 1]
@@ -64,16 +67,22 @@ def main() -> None:
 						goal = "informational"
 					else:
 						goal = "mixed"
+					# parse response
+					adj_pattern = "|".join(adjective_seq)
+					response_adj = re.search(rf"({adj_pattern})(?=\.)", response.strip())
+					response_adj = re.search(rf"({adj_pattern})(?=\.)", response.strip())
+					response_adj = response_adj.group(0)
+					response_int = adjective_seq.index(response_adj) + 1
 					trials.append({
 						"topic": topic.strip(),
 						"opinion_a": opinion_a,
 						"opinion_b": opinion_b,
-						"adjectives": adjective_seq.strip().split(","),
+						"adjectives": adjective_seq,
 						"name_a": name_a,
 						# "name_b": None,	# placeholder, will be filled in later
 						# "behaviour": behaviour.strip(),
 						"goal": goal,
-						"response": response.strip()
+						"response": response_int
 					})
 				# Build dictionary for this file
 				# from subject info, we only need age and gender
