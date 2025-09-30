@@ -1,0 +1,28 @@
+OVERALL DISTRIBUTIONS
+
+
+Overall chi-squared statistic between golds and preds: 1164.826, with p-value: 0.000
+
+
+Overall Cohen's kappa between golds and preds: 0.000
+
+
+
+EFFECT OF MATCH/MISMATCH
+
+Z-scores and p-values for the effect of opinions match/mismatch on the proportion of indirect responses, by conversational goal:
+conversational goal  total number of responses, opinions match  proportion of indirect responses, opinions match  total number of responses, opinions mismatch  proportion of indirect responses, opinions mismatch   z-stat  p-value
+             social                                        150                                          0.520000                                           162                                             0.462963 1.006916 0.313975
+              mixed                                        154                                          0.532468                                           184                                             0.456522 1.390955 0.164239
+      informational                                        169                                          0.497041                                           161                                             0.434783 1.133176 0.257140
+
+
+
+EFFECT OF POLARITY
+
+
+Z-scores and p-values for the effect of polarity (strongly negative vs. strongly positive) on the proportion of indirect responses, by conversational goal:
+conversational goal  total number of responses, strongly negative  proportion of indirect responses, strongly negative  total number of responses, strongly positive  proportion of indirect responses, strongly positive    z-stat      p-value
+             social                                            75                                                  1.0                                            87                                                  0.0 12.727922 4.137032e-37
+              mixed                                            84                                                  1.0                                           100                                                  0.0 13.564660 6.487984e-42
+      informational                                            70                                                  1.0                                            91                                                  0.0 12.688578 6.841708e-37
