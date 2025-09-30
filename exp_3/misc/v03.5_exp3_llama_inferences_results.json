@@ -1,0 +1,962 @@
+[
+    {
+        "id": 1,
+        "mode": "plain",
+        "u_a_word": "terrible",
+        "u_b_word": "poor",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nStart Inference Task!\n===========================\nTimothy and Charles meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nTimothy says: The city's climate policies are terrible.\nCharles replies: I find it poor.\n\nHow may Charles actually feel about the issue?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.5757635831832886,
+            "2": -1.6382635831832886,
+            "3": -1.2945135831832886,
+            "4": -1.5601385831832886,
+            "5": -2.466388702392578
+        }
+    },
+    {
+        "id": 2,
+        "mode": "plain",
+        "u_a_word": "terrible",
+        "u_b_word": "rather bad",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nStart Inference Task!\n===========================\nTimothy and Charles meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nTimothy says: The city's climate policies are terrible.\nCharles replies: I find it rather bad.\n\nHow may Charles actually feel about the issue?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.5793665647506714,
+            "2": -1.6262415647506714,
+            "3": -1.2824915647506714,
+            "4": -1.5637415647506714,
+            "5": -2.501241683959961
+        }
+    },
+    {
+        "id": 3,
+        "mode": "plain",
+        "u_a_word": "terrible",
+        "u_b_word": "okay",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nStart Inference Task!\n===========================\nTimothy and Charles meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nTimothy says: The city's climate policies are terrible.\nCharles replies: I find it okay.\n\nHow may Charles actually feel about the issue?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.578799843788147,
+            "2": -1.625674843788147,
+            "3": -1.281924843788147,
+            "4": -1.563174843788147,
+            "5": -2.5162997245788574
+        }
+    },
+    {
+        "id": 4,
+        "mode": "plain",
+        "u_a_word": "terrible",
+        "u_b_word": "interesting",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nStart Inference Task!\n===========================\nTimothy and Charles meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nTimothy says: The city's climate policies are terrible.\nCharles replies: I find it interesting.\n\nHow may Charles actually feel about the issue?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.548763394355774,
+            "2": -1.626888394355774,
+            "3": -1.298763394355774,
+            "4": -1.580013394355774,
+            "5": -2.5175132751464844
+        }
+    },
+    {
+        "id": 5,
+        "mode": "plain",
+        "u_a_word": "terrible",
+        "u_b_word": "decent",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nStart Inference Task!\n===========================\nTimothy and Charles meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nTimothy says: The city's climate policies are terrible.\nCharles replies: I find it decent.\n\nHow may Charles actually feel about the issue?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.569688320159912,
+            "2": -1.632188320159912,
+            "3": -1.288438320159912,
+            "4": -1.569688320159912,
+            "5": -2.491563320159912
+        }
+    },
+    {
+        "id": 6,
+        "mode": "plain",
+        "u_a_word": "terrible",
+        "u_b_word": "pretty good",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nStart Inference Task!\n===========================\nTimothy and Charles meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nTimothy says: The city's climate policies are terrible.\nCharles replies: I find it pretty good.\n\nHow may Charles actually feel about the issue?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.5972589254379272,
+            "2": -1.6285089254379272,
+            "3": -1.2847589254379272,
+            "4": -1.5503839254379272,
+            "5": -2.487884044647217
+        }
+    },
+    {
+        "id": 7,
+        "mode": "plain",
+        "u_a_word": "poor",
+        "u_b_word": "rather bad",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nStart Inference Task!\n===========================\nTimothy and Charles meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nTimothy says: The city's climate policies are poor.\nCharles replies: I find it rather bad.\n\nHow may Charles actually feel about the issue?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.599755883216858,
+            "2": -1.615380883216858,
+            "3": -1.271630883216858,
+            "4": -1.552880883216858,
+            "5": -2.5372557640075684
+        }
+    },
+    {
+        "id": 8,
+        "mode": "plain",
+        "u_a_word": "poor",
+        "u_b_word": "okay",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nStart Inference Task!\n===========================\nTimothy and Charles meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nTimothy says: The city's climate policies are poor.\nCharles replies: I find it okay.\n\nHow may Charles actually feel about the issue?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.5883328914642334,
+            "2": -1.6195828914642334,
+            "3": -1.2758328914642334,
+            "4": -1.5570828914642334,
+            "5": -2.5414578914642334
+        }
+    },
+    {
+        "id": 9,
+        "mode": "plain",
+        "u_a_word": "poor",
+        "u_b_word": "interesting",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nStart Inference Task!\n===========================\nTimothy and Charles meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nTimothy says: The city's climate policies are poor.\nCharles replies: I find it interesting.\n\nHow may Charles actually feel about the issue?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.556423544883728,
+            "2": -1.618923544883728,
+            "3": -1.290798544883728,
+            "4": -1.572048544883728,
+            "5": -2.5564236640930176
+        }
+    },
+    {
+        "id": 10,
+        "mode": "plain",
+        "u_a_word": "poor",
+        "u_b_word": "decent",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nStart Inference Task!\n===========================\nTimothy and Charles meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nTimothy says: The city's climate policies are poor.\nCharles replies: I find it decent.\n\nHow may Charles actually feel about the issue?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.585504174232483,
+            "2": -1.632379174232483,
+            "3": -1.273004174232483,
+            "4": -1.554254174232483,
+            "5": -2.5386290550231934
+        }
+    },
+    {
+        "id": 11,
+        "mode": "plain",
+        "u_a_word": "poor",
+        "u_b_word": "pretty good",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nStart Inference Task!\n===========================\nTimothy and Charles meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nTimothy says: The city's climate policies are poor.\nCharles replies: I find it pretty good.\n\nHow may Charles actually feel about the issue?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.6017520427703857,
+            "2": -1.6173770427703857,
+            "3": -1.2736270427703857,
+            "4": -1.5548770427703857,
+            "5": -2.5236270427703857
+        }
+    },
+    {
+        "id": 12,
+        "mode": "plain",
+        "u_a_word": "okay",
+        "u_b_word": "poor",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nStart Inference Task!\n===========================\nTimothy and Charles meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nTimothy says: The city's climate policies are okay.\nCharles replies: I find it poor.\n\nHow may Charles actually feel about the issue?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.5726944208145142,
+            "2": -1.6351944208145142,
+            "3": -1.2914444208145142,
+            "4": -1.5570694208145142,
+            "5": -2.5101943016052246
+        }
+    },
+    {
+        "id": 13,
+        "mode": "plain",
+        "u_a_word": "okay",
+        "u_b_word": "rather bad",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nStart Inference Task!\n===========================\nTimothy and Charles meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nTimothy says: The city's climate policies are okay.\nCharles replies: I find it rather bad.\n\nHow may Charles actually feel about the issue?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.6006746292114258,
+            "2": -1.6162996292114258,
+            "3": -1.2725496292114258,
+            "4": -1.5537996292114258,
+            "5": -2.538174629211426
+        }
+    },
+    {
+        "id": 14,
+        "mode": "plain",
+        "u_a_word": "okay",
+        "u_b_word": "interesting",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nStart Inference Task!\n===========================\nTimothy and Charles meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nTimothy says: The city's climate policies are okay.\nCharles replies: I find it interesting.\n\nHow may Charles actually feel about the issue?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.561280369758606,
+            "2": -1.608155369758606,
+            "3": -1.280030369758606,
+            "4": -1.576905369758606,
+            "5": -2.6081552505493164
+        }
+    },
+    {
+        "id": 15,
+        "mode": "plain",
+        "u_a_word": "okay",
+        "u_b_word": "decent",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nStart Inference Task!\n===========================\nTimothy and Charles meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nTimothy says: The city's climate policies are okay.\nCharles replies: I find it decent.\n\nHow may Charles actually feel about the issue?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.570189356803894,
+            "2": -1.617064356803894,
+            "3": -1.273314356803894,
+            "4": -1.570189356803894,
+            "5": -2.5858144760131836
+        }
+    },
+    {
+        "id": 16,
+        "mode": "plain",
+        "u_a_word": "okay",
+        "u_b_word": "pretty good",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nStart Inference Task!\n===========================\nTimothy and Charles meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nTimothy says: The city's climate policies are okay.\nCharles replies: I find it pretty good.\n\nHow may Charles actually feel about the issue?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.60646390914917,
+            "2": -1.60646390914917,
+            "3": -1.26271390914917,
+            "4": -1.55958890914917,
+            "5": -2.57521390914917
+        }
+    },
+    {
+        "id": 17,
+        "mode": "plain",
+        "u_a_word": "interesting",
+        "u_b_word": "poor",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nStart Inference Task!\n===========================\nTimothy and Charles meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nTimothy says: The city's climate policies are interesting.\nCharles replies: I find it poor.\n\nHow may Charles actually feel about the issue?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -10.0,
+            "2": -10.0,
+            "3": -10.0,
+            "4": -10.0,
+            "5": -10.0
+        }
+    },
+    {
+        "id": 18,
+        "mode": "plain",
+        "u_a_word": "interesting",
+        "u_b_word": "rather bad",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nStart Inference Task!\n===========================\nTimothy and Charles meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nTimothy says: The city's climate policies are interesting.\nCharles replies: I find it rather bad.\n\nHow may Charles actually feel about the issue?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.585376262664795,
+            "2": -1.616626262664795,
+            "3": -1.272876262664795,
+            "4": -1.554126262664795,
+            "5": -2.569751262664795
+        }
+    },
+    {
+        "id": 19,
+        "mode": "plain",
+        "u_a_word": "interesting",
+        "u_b_word": "okay",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nStart Inference Task!\n===========================\nTimothy and Charles meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nTimothy says: The city's climate policies are interesting.\nCharles replies: I find it okay.\n\nHow may Charles actually feel about the issue?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.5750735998153687,
+            "2": -1.6063235998153687,
+            "3": -1.2625735998153687,
+            "4": -1.5750735998153687,
+            "5": -2.621948719024658
+        }
+    },
+    {
+        "id": 20,
+        "mode": "plain",
+        "u_a_word": "interesting",
+        "u_b_word": "decent",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nStart Inference Task!\n===========================\nTimothy and Charles meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nTimothy says: The city's climate policies are interesting.\nCharles replies: I find it decent.\n\nHow may Charles actually feel about the issue?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.5689688920974731,
+            "2": -1.6158438920974731,
+            "3": -1.2720938920974731,
+            "4": -1.5689688920974731,
+            "5": -2.6002187728881836
+        }
+    },
+    {
+        "id": 21,
+        "mode": "plain",
+        "u_a_word": "interesting",
+        "u_b_word": "pretty good",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nStart Inference Task!\n===========================\nTimothy and Charles meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nTimothy says: The city's climate policies are interesting.\nCharles replies: I find it pretty good.\n\nHow may Charles actually feel about the issue?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.60188627243042,
+            "2": -1.60188627243042,
+            "3": -1.25813627243042,
+            "4": -1.57063627243042,
+            "5": -2.58626127243042
+        }
+    },
+    {
+        "id": 22,
+        "mode": "plain",
+        "u_a_word": "pretty good",
+        "u_b_word": "poor",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nStart Inference Task!\n===========================\nTimothy and Charles meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nTimothy says: The city's climate policies are pretty good.\nCharles replies: I find it poor.\n\nHow may Charles actually feel about the issue?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.5922437906265259,
+            "2": -1.6391187906265259,
+            "3": -1.2797437906265259,
+            "4": -1.5453687906265259,
+            "5": -2.5141186714172363
+        }
+    },
+    {
+        "id": 23,
+        "mode": "plain",
+        "u_a_word": "pretty good",
+        "u_b_word": "rather bad",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nStart Inference Task!\n===========================\nTimothy and Charles meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nTimothy says: The city's climate policies are pretty good.\nCharles replies: I find it rather bad.\n\nHow may Charles actually feel about the issue?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.6080265045166016,
+            "2": -1.6236515045166016,
+            "3": -1.2642765045166016,
+            "4": -1.5455265045166016,
+            "5": -2.5455265045166016
+        }
+    },
+    {
+        "id": 24,
+        "mode": "plain",
+        "u_a_word": "pretty good",
+        "u_b_word": "okay",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nStart Inference Task!\n===========================\nTimothy and Charles meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nTimothy says: The city's climate policies are pretty good.\nCharles replies: I find it okay.\n\nHow may Charles actually feel about the issue?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.5936657190322876,
+            "2": -1.6092907190322876,
+            "3": -1.2655407190322876,
+            "4": -1.5624157190322876,
+            "5": -2.578040599822998
+        }
+    },
+    {
+        "id": 25,
+        "mode": "plain",
+        "u_a_word": "pretty good",
+        "u_b_word": "interesting",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nStart Inference Task!\n===========================\nTimothy and Charles meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nTimothy says: The city's climate policies are pretty good.\nCharles replies: I find it interesting.\n\nHow may Charles actually feel about the issue?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.5722109079360962,
+            "2": -1.6190859079360962,
+            "3": -1.2753359079360962,
+            "4": -1.5722109079360962,
+            "5": -2.5722107887268066
+        }
+    },
+    {
+        "id": 26,
+        "mode": "plain",
+        "u_a_word": "pretty good",
+        "u_b_word": "decent",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nStart Inference Task!\n===========================\nTimothy and Charles meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nTimothy says: The city's climate policies are pretty good.\nCharles replies: I find it decent.\n\nHow may Charles actually feel about the issue?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.5769752264022827,
+            "2": -1.6238502264022827,
+            "3": -1.2644752264022827,
+            "4": -1.5769752264022827,
+            "5": -2.5613503456115723
+        }
+    },
+    {
+        "id": 27,
+        "mode": "plain",
+        "u_a_word": "amazing",
+        "u_b_word": "poor",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nStart Inference Task!\n===========================\nTimothy and Charles meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nTimothy says: The city's climate policies are amazing.\nCharles replies: I find it poor.\n\nHow may Charles actually feel about the issue?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.5657248497009277,
+            "2": -1.6438498497009277,
+            "3": -1.3000998497009277,
+            "4": -1.5657248497009277,
+            "5": -2.4563498497009277
+        }
+    },
+    {
+        "id": 28,
+        "mode": "plain",
+        "u_a_word": "amazing",
+        "u_b_word": "rather bad",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nStart Inference Task!\n===========================\nTimothy and Charles meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nTimothy says: The city's climate policies are amazing.\nCharles replies: I find it rather bad.\n\nHow may Charles actually feel about the issue?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.5728158950805664,
+            "2": -1.6353158950805664,
+            "3": -1.2915658950805664,
+            "4": -1.5571908950805664,
+            "5": -2.4946908950805664
+        }
+    },
+    {
+        "id": 29,
+        "mode": "plain",
+        "u_a_word": "amazing",
+        "u_b_word": "okay",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nStart Inference Task!\n===========================\nTimothy and Charles meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nTimothy says: The city's climate policies are amazing.\nCharles replies: I find it okay.\n\nHow may Charles actually feel about the issue?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.5779703855514526,
+            "2": -1.6248453855514526,
+            "3": -1.2810953855514526,
+            "4": -1.5623453855514526,
+            "5": -2.531095504760742
+        }
+    },
+    {
+        "id": 30,
+        "mode": "plain",
+        "u_a_word": "amazing",
+        "u_b_word": "interesting",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nStart Inference Task!\n===========================\nTimothy and Charles meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nTimothy says: The city's climate policies are amazing.\nCharles replies: I find it interesting.\n\nHow may Charles actually feel about the issue?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.5660147666931152,
+            "2": -1.6285147666931152,
+            "3": -1.2691397666931152,
+            "4": -1.5816397666931152,
+            "5": -2.5660147666931152
+        }
+    },
+    {
+        "id": 31,
+        "mode": "plain",
+        "u_a_word": "amazing",
+        "u_b_word": "decent",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nStart Inference Task!\n===========================\nTimothy and Charles meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nTimothy says: The city's climate policies are amazing.\nCharles replies: I find it decent.\n\nHow may Charles actually feel about the issue?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.5721666812896729,
+            "2": -1.6346666812896729,
+            "3": -1.2752916812896729,
+            "4": -1.5721666812896729,
+            "5": -2.525291681289673
+        }
+    },
+    {
+        "id": 32,
+        "mode": "plain",
+        "u_a_word": "amazing",
+        "u_b_word": "pretty good",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nStart Inference Task!\n===========================\nTimothy and Charles meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nTimothy says: The city's climate policies are amazing.\nCharles replies: I find it pretty good.\n\nHow may Charles actually feel about the issue?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.5869653224945068,
+            "2": -1.6182153224945068,
+            "3": -1.2744653224945068,
+            "4": -1.5713403224945068,
+            "5": -2.524465322494507
+        }
+    },
+    {
+        "id": 1,
+        "mode": "hearts",
+        "u_a_word": "terrible",
+        "u_b_word": "poor",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nHint: When thinking about the response, consider that a scale is used:\nStrongly Negative (1) ❤️ ♡ ♡ ♡ ♡\nSomewhat Negative (2)❤️ ❤️ ♡ ♡ ♡\nNeutral (3) ❤️ ❤️ ❤️ ♡ ♡\nSomewhat Positive (4)❤️ ❤️ ❤️ ❤️ ♡ \nStrongly Positive (5) ❤️ ❤️ ❤️ ❤️ ❤️\n\nStart Inference Task!\n===========================\nJose and Kyle meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nJose says: The city's climate policies are terrible.\nKyle replies: I find it poor.\n\nHow may Kyle actually feel about the issue (1-5 hearts)?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.8036906719207764,
+            "2": -1.8036906719207764,
+            "3": -1.2880656719207764,
+            "4": -1.3661906719207764,
+            "5": -2.3505656719207764
+        }
+    },
+    {
+        "id": 2,
+        "mode": "hearts",
+        "u_a_word": "terrible",
+        "u_b_word": "rather bad",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nHint: When thinking about the response, consider that a scale is used:\nStrongly Negative (1) ❤️ ♡ ♡ ♡ ♡\nSomewhat Negative (2)❤️ ❤️ ♡ ♡ ♡\nNeutral (3) ❤️ ❤️ ❤️ ♡ ♡\nSomewhat Positive (4)❤️ ❤️ ❤️ ❤️ ♡ \nStrongly Positive (5) ❤️ ❤️ ❤️ ❤️ ❤️\n\nStart Inference Task!\n===========================\nJose and Kyle meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nJose says: The city's climate policies are terrible.\nKyle replies: I find it rather bad.\n\nHow may Kyle actually feel about the issue (1-5 hearts)?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -10.0,
+            "2": -10.0,
+            "3": -10.0,
+            "4": -10.0,
+            "5": -10.0
+        }
+    },
+    {
+        "id": 3,
+        "mode": "hearts",
+        "u_a_word": "terrible",
+        "u_b_word": "okay",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nHint: When thinking about the response, consider that a scale is used:\nStrongly Negative (1) ❤️ ♡ ♡ ♡ ♡\nSomewhat Negative (2)❤️ ❤️ ♡ ♡ ♡\nNeutral (3) ❤️ ❤️ ❤️ ♡ ♡\nSomewhat Positive (4)❤️ ❤️ ❤️ ❤️ ♡ \nStrongly Positive (5) ❤️ ❤️ ❤️ ❤️ ❤️\n\nStart Inference Task!\n===========================\nJose and Kyle meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nJose says: The city's climate policies are terrible.\nKyle replies: I find it okay.\n\nHow may Kyle actually feel about the issue (1-5 hearts)?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.816136121749878,
+            "2": -1.800511121749878,
+            "3": -1.269261121749878,
+            "4": -1.363011121749878,
+            "5": -2.378636121749878
+        }
+    },
+    {
+        "id": 4,
+        "mode": "hearts",
+        "u_a_word": "terrible",
+        "u_b_word": "interesting",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nHint: When thinking about the response, consider that a scale is used:\nStrongly Negative (1) ❤️ ♡ ♡ ♡ ♡\nSomewhat Negative (2)❤️ ❤️ ♡ ♡ ♡\nNeutral (3) ❤️ ❤️ ❤️ ♡ ♡\nSomewhat Positive (4)❤️ ❤️ ❤️ ❤️ ♡ \nStrongly Positive (5) ❤️ ❤️ ❤️ ❤️ ❤️\n\nStart Inference Task!\n===========================\nJose and Kyle meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nJose says: The city's climate policies are terrible.\nKyle replies: I find it interesting.\n\nHow may Kyle actually feel about the issue (1-5 hearts)?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -10.0,
+            "2": -10.0,
+            "3": -10.0,
+            "4": -10.0,
+            "5": -10.0
+        }
+    },
+    {
+        "id": 5,
+        "mode": "hearts",
+        "u_a_word": "terrible",
+        "u_b_word": "decent",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nHint: When thinking about the response, consider that a scale is used:\nStrongly Negative (1) ❤️ ♡ ♡ ♡ ♡\nSomewhat Negative (2)❤️ ❤️ ♡ ♡ ♡\nNeutral (3) ❤️ ❤️ ❤️ ♡ ♡\nSomewhat Positive (4)❤️ ❤️ ❤️ ❤️ ♡ \nStrongly Positive (5) ❤️ ❤️ ❤️ ❤️ ❤️\n\nStart Inference Task!\n===========================\nJose and Kyle meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nJose says: The city's climate policies are terrible.\nKyle replies: I find it decent.\n\nHow may Kyle actually feel about the issue (1-5 hearts)?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.8060380220413208,
+            "2": -1.8060380220413208,
+            "3": -1.2747880220413208,
+            "4": -1.3685380220413208,
+            "5": -2.3685379028320312
+        }
+    },
+    {
+        "id": 6,
+        "mode": "hearts",
+        "u_a_word": "terrible",
+        "u_b_word": "pretty good",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nHint: When thinking about the response, consider that a scale is used:\nStrongly Negative (1) ❤️ ♡ ♡ ♡ ♡\nSomewhat Negative (2)❤️ ❤️ ♡ ♡ ♡\nNeutral (3) ❤️ ❤️ ❤️ ♡ ♡\nSomewhat Positive (4)❤️ ❤️ ❤️ ❤️ ♡ \nStrongly Positive (5) ❤️ ❤️ ❤️ ❤️ ❤️\n\nStart Inference Task!\n===========================\nJose and Kyle meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nJose says: The city's climate policies are terrible.\nKyle replies: I find it pretty good.\n\nHow may Kyle actually feel about the issue (1-5 hearts)?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.8363345861434937,
+            "2": -1.8050845861434937,
+            "3": -1.2582095861434937,
+            "4": -1.3675845861434937,
+            "5": -2.367584705352783
+        }
+    },
+    {
+        "id": 7,
+        "mode": "hearts",
+        "u_a_word": "poor",
+        "u_b_word": "rather bad",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nHint: When thinking about the response, consider that a scale is used:\nStrongly Negative (1) ❤️ ♡ ♡ ♡ ♡\nSomewhat Negative (2)❤️ ❤️ ♡ ♡ ♡\nNeutral (3) ❤️ ❤️ ❤️ ♡ ♡\nSomewhat Positive (4)❤️ ❤️ ❤️ ❤️ ♡ \nStrongly Positive (5) ❤️ ❤️ ❤️ ❤️ ❤️\n\nStart Inference Task!\n===========================\nJose and Kyle meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nJose says: The city's climate policies are poor.\nKyle replies: I find it rather bad.\n\nHow may Kyle actually feel about the issue (1-5 hearts)?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.828922986984253,
+            "2": -1.797672986984253,
+            "3": -1.250797986984253,
+            "4": -1.360172986984253,
+            "5": -2.422672986984253
+        }
+    },
+    {
+        "id": 8,
+        "mode": "hearts",
+        "u_a_word": "poor",
+        "u_b_word": "okay",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nHint: When thinking about the response, consider that a scale is used:\nStrongly Negative (1) ❤️ ♡ ♡ ♡ ♡\nSomewhat Negative (2)❤️ ❤️ ♡ ♡ ♡\nNeutral (3) ❤️ ❤️ ❤️ ♡ ♡\nSomewhat Positive (4)❤️ ❤️ ❤️ ❤️ ♡ \nStrongly Positive (5) ❤️ ❤️ ❤️ ❤️ ❤️\n\nStart Inference Task!\n===========================\nJose and Kyle meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nJose says: The city's climate policies are poor.\nKyle replies: I find it okay.\n\nHow may Kyle actually feel about the issue (1-5 hearts)?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.818318247795105,
+            "2": -1.787068247795105,
+            "3": -1.255818247795105,
+            "4": -1.365193247795105,
+            "5": -2.4276933670043945
+        }
+    },
+    {
+        "id": 9,
+        "mode": "hearts",
+        "u_a_word": "poor",
+        "u_b_word": "interesting",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nHint: When thinking about the response, consider that a scale is used:\nStrongly Negative (1) ❤️ ♡ ♡ ♡ ♡\nSomewhat Negative (2)❤️ ❤️ ♡ ♡ ♡\nNeutral (3) ❤️ ❤️ ❤️ ♡ ♡\nSomewhat Positive (4)❤️ ❤️ ❤️ ❤️ ♡ \nStrongly Positive (5) ❤️ ❤️ ❤️ ❤️ ❤️\n\nStart Inference Task!\n===========================\nJose and Kyle meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nJose says: The city's climate policies are poor.\nKyle replies: I find it interesting.\n\nHow may Kyle actually feel about the issue (1-5 hearts)?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.8094003200531006,
+            "2": -1.7937753200531006,
+            "3": -1.2625253200531006,
+            "4": -1.3719003200531006,
+            "5": -2.4187753200531006
+        }
+    },
+    {
+        "id": 10,
+        "mode": "hearts",
+        "u_a_word": "poor",
+        "u_b_word": "decent",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nHint: When thinking about the response, consider that a scale is used:\nStrongly Negative (1) ❤️ ♡ ♡ ♡ ♡\nSomewhat Negative (2)❤️ ❤️ ♡ ♡ ♡\nNeutral (3) ❤️ ❤️ ❤️ ♡ ♡\nSomewhat Positive (4)❤️ ❤️ ❤️ ❤️ ♡ \nStrongly Positive (5) ❤️ ❤️ ❤️ ❤️ ❤️\n\nStart Inference Task!\n===========================\nJose and Kyle meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nJose says: The city's climate policies are poor.\nKyle replies: I find it decent.\n\nHow may Kyle actually feel about the issue (1-5 hearts)?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.8254107236862183,
+            "2": -1.7941607236862183,
+            "3": -1.2629107236862183,
+            "4": -1.3566607236862183,
+            "5": -2.419160842895508
+        }
+    },
+    {
+        "id": 11,
+        "mode": "hearts",
+        "u_a_word": "poor",
+        "u_b_word": "pretty good",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nHint: When thinking about the response, consider that a scale is used:\nStrongly Negative (1) ❤️ ♡ ♡ ♡ ♡\nSomewhat Negative (2)❤️ ❤️ ♡ ♡ ♡\nNeutral (3) ❤️ ❤️ ❤️ ♡ ♡\nSomewhat Positive (4)❤️ ❤️ ❤️ ❤️ ♡ \nStrongly Positive (5) ❤️ ❤️ ❤️ ❤️ ❤️\n\nStart Inference Task!\n===========================\nJose and Kyle meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nJose says: The city's climate policies are poor.\nKyle replies: I find it pretty good.\n\nHow may Kyle actually feel about the issue (1-5 hearts)?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.8443796634674072,
+            "2": -1.7975046634674072,
+            "3": -1.2506296634674072,
+            "4": -1.3600046634674072,
+            "5": -2.4068796634674072
+        }
+    },
+    {
+        "id": 12,
+        "mode": "hearts",
+        "u_a_word": "okay",
+        "u_b_word": "poor",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nHint: When thinking about the response, consider that a scale is used:\nStrongly Negative (1) ❤️ ♡ ♡ ♡ ♡\nSomewhat Negative (2)❤️ ❤️ ♡ ♡ ♡\nNeutral (3) ❤️ ❤️ ❤️ ♡ ♡\nSomewhat Positive (4)❤️ ❤️ ❤️ ❤️ ♡ \nStrongly Positive (5) ❤️ ❤️ ❤️ ❤️ ❤️\n\nStart Inference Task!\n===========================\nJose and Kyle meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nJose says: The city's climate policies are okay.\nKyle replies: I find it poor.\n\nHow may Kyle actually feel about the issue (1-5 hearts)?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.829283595085144,
+            "2": -1.798033595085144,
+            "3": -1.266783595085144,
+            "4": -1.360533595085144,
+            "5": -2.3917837142944336
+        }
+    },
+    {
+        "id": 13,
+        "mode": "hearts",
+        "u_a_word": "okay",
+        "u_b_word": "rather bad",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nHint: When thinking about the response, consider that a scale is used:\nStrongly Negative (1) ❤️ ♡ ♡ ♡ ♡\nSomewhat Negative (2)❤️ ❤️ ♡ ♡ ♡\nNeutral (3) ❤️ ❤️ ❤️ ♡ ♡\nSomewhat Positive (4)❤️ ❤️ ❤️ ❤️ ♡ \nStrongly Positive (5) ❤️ ❤️ ❤️ ❤️ ❤️\n\nStart Inference Task!\n===========================\nJose and Kyle meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nJose says: The city's climate policies are okay.\nKyle replies: I find it rather bad.\n\nHow may Kyle actually feel about the issue (1-5 hearts)?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.8463629484176636,
+            "2": -1.7994879484176636,
+            "3": -1.2526129484176636,
+            "4": -1.3463629484176636,
+            "5": -2.424488067626953
+        }
+    },
+    {
+        "id": 14,
+        "mode": "hearts",
+        "u_a_word": "okay",
+        "u_b_word": "interesting",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nHint: When thinking about the response, consider that a scale is used:\nStrongly Negative (1) ❤️ ♡ ♡ ♡ ♡\nSomewhat Negative (2)❤️ ❤️ ♡ ♡ ♡\nNeutral (3) ❤️ ❤️ ❤️ ♡ ♡\nSomewhat Positive (4)❤️ ❤️ ❤️ ❤️ ♡ \nStrongly Positive (5) ❤️ ❤️ ❤️ ❤️ ❤️\n\nStart Inference Task!\n===========================\nJose and Kyle meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nJose says: The city's climate policies are okay.\nKyle replies: I find it interesting.\n\nHow may Kyle actually feel about the issue (1-5 hearts)?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.8300644159317017,
+            "2": -1.7831894159317017,
+            "3": -1.2363144159317017,
+            "4": -1.3769394159317017,
+            "5": -2.470689296722412
+        }
+    },
+    {
+        "id": 15,
+        "mode": "hearts",
+        "u_a_word": "okay",
+        "u_b_word": "decent",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nHint: When thinking about the response, consider that a scale is used:\nStrongly Negative (1) ❤️ ♡ ♡ ♡ ♡\nSomewhat Negative (2)❤️ ❤️ ♡ ♡ ♡\nNeutral (3) ❤️ ❤️ ❤️ ♡ ♡\nSomewhat Positive (4)❤️ ❤️ ❤️ ❤️ ♡ \nStrongly Positive (5) ❤️ ❤️ ❤️ ❤️ ❤️\n\nStart Inference Task!\n===========================\nJose and Kyle meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nJose says: The city's climate policies are okay.\nKyle replies: I find it decent.\n\nHow may Kyle actually feel about the issue (1-5 hearts)?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.8362810611724854,
+            "2": -1.7894060611724854,
+            "3": -1.2425310611724854,
+            "4": -1.3675310611724854,
+            "5": -2.4456560611724854
+        }
+    },
+    {
+        "id": 16,
+        "mode": "hearts",
+        "u_a_word": "okay",
+        "u_b_word": "pretty good",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nHint: When thinking about the response, consider that a scale is used:\nStrongly Negative (1) ❤️ ♡ ♡ ♡ ♡\nSomewhat Negative (2)❤️ ❤️ ♡ ♡ ♡\nNeutral (3) ❤️ ❤️ ❤️ ♡ ♡\nSomewhat Positive (4)❤️ ❤️ ❤️ ❤️ ♡ \nStrongly Positive (5) ❤️ ❤️ ❤️ ❤️ ❤️\n\nStart Inference Task!\n===========================\nJose and Kyle meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nJose says: The city's climate policies are okay.\nKyle replies: I find it pretty good.\n\nHow may Kyle actually feel about the issue (1-5 hearts)?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.8623827695846558,
+            "2": -1.7998827695846558,
+            "3": -1.2217577695846558,
+            "4": -1.3623827695846558,
+            "5": -2.4561328887939453
+        }
+    },
+    {
+        "id": 17,
+        "mode": "hearts",
+        "u_a_word": "interesting",
+        "u_b_word": "poor",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nHint: When thinking about the response, consider that a scale is used:\nStrongly Negative (1) ❤️ ♡ ♡ ♡ ♡\nSomewhat Negative (2)❤️ ❤️ ♡ ♡ ♡\nNeutral (3) ❤️ ❤️ ❤️ ♡ ♡\nSomewhat Positive (4)❤️ ❤️ ❤️ ❤️ ♡ \nStrongly Positive (5) ❤️ ❤️ ❤️ ❤️ ❤️\n\nStart Inference Task!\n===========================\nJose and Kyle meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nJose says: The city's climate policies are interesting.\nKyle replies: I find it poor.\n\nHow may Kyle actually feel about the issue (1-5 hearts)?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.7980968952178955,
+            "2": -1.7980968952178955,
+            "3": -1.2668468952178955,
+            "4": -1.3762218952178955,
+            "5": -2.4074718952178955
+        }
+    },
+    {
+        "id": 18,
+        "mode": "hearts",
+        "u_a_word": "interesting",
+        "u_b_word": "rather bad",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nHint: When thinking about the response, consider that a scale is used:\nStrongly Negative (1) ❤️ ♡ ♡ ♡ ♡\nSomewhat Negative (2)❤️ ❤️ ♡ ♡ ♡\nNeutral (3) ❤️ ❤️ ❤️ ♡ ♡\nSomewhat Positive (4)❤️ ❤️ ❤️ ❤️ ♡ \nStrongly Positive (5) ❤️ ❤️ ❤️ ❤️ ❤️\n\nStart Inference Task!\n===========================\nJose and Kyle meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nJose says: The city's climate policies are interesting.\nKyle replies: I find it rather bad.\n\nHow may Kyle actually feel about the issue (1-5 hearts)?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.8222557306289673,
+            "2": -1.7910057306289673,
+            "3": -1.2441307306289673,
+            "4": -1.3691307306289673,
+            "5": -2.4472556114196777
+        }
+    },
+    {
+        "id": 19,
+        "mode": "hearts",
+        "u_a_word": "interesting",
+        "u_b_word": "okay",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nHint: When thinking about the response, consider that a scale is used:\nStrongly Negative (1) ❤️ ♡ ♡ ♡ ♡\nSomewhat Negative (2)❤️ ❤️ ♡ ♡ ♡\nNeutral (3) ❤️ ❤️ ❤️ ♡ ♡\nSomewhat Positive (4)❤️ ❤️ ❤️ ❤️ ♡ \nStrongly Positive (5) ❤️ ❤️ ❤️ ❤️ ❤️\n\nStart Inference Task!\n===========================\nJose and Kyle meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nJose says: The city's climate policies are interesting.\nKyle replies: I find it okay.\n\nHow may Kyle actually feel about the issue (1-5 hearts)?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.8112757205963135,
+            "2": -1.7800257205963135,
+            "3": -1.2331507205963135,
+            "4": -1.3894007205963135,
+            "5": -2.4675257205963135
+        }
+    },
+    {
+        "id": 20,
+        "mode": "hearts",
+        "u_a_word": "interesting",
+        "u_b_word": "decent",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nHint: When thinking about the response, consider that a scale is used:\nStrongly Negative (1) ❤️ ♡ ♡ ♡ ♡\nSomewhat Negative (2)❤️ ❤️ ♡ ♡ ♡\nNeutral (3) ❤️ ❤️ ❤️ ♡ ♡\nSomewhat Positive (4)❤️ ❤️ ❤️ ❤️ ♡ \nStrongly Positive (5) ❤️ ❤️ ❤️ ❤️ ❤️\n\nStart Inference Task!\n===========================\nJose and Kyle meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nJose says: The city's climate policies are interesting.\nKyle replies: I find it decent.\n\nHow may Kyle actually feel about the issue (1-5 hearts)?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.8180173635482788,
+            "2": -1.7867673635482788,
+            "3": -1.2398923635482788,
+            "4": -1.3805173635482788,
+            "5": -2.4586424827575684
+        }
+    },
+    {
+        "id": 21,
+        "mode": "hearts",
+        "u_a_word": "interesting",
+        "u_b_word": "pretty good",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nHint: When thinking about the response, consider that a scale is used:\nStrongly Negative (1) ❤️ ♡ ♡ ♡ ♡\nSomewhat Negative (2)❤️ ❤️ ♡ ♡ ♡\nNeutral (3) ❤️ ❤️ ❤️ ♡ ♡\nSomewhat Positive (4)❤️ ❤️ ❤️ ❤️ ♡ \nStrongly Positive (5) ❤️ ❤️ ❤️ ❤️ ❤️\n\nStart Inference Task!\n===========================\nJose and Kyle meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nJose says: The city's climate policies are interesting.\nKyle replies: I find it pretty good.\n\nHow may Kyle actually feel about the issue (1-5 hearts)?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.84086012840271,
+            "2": -1.79398512840271,
+            "3": -1.23148512840271,
+            "4": -1.37211012840271,
+            "5": -2.45023512840271
+        }
+    },
+    {
+        "id": 22,
+        "mode": "hearts",
+        "u_a_word": "pretty good",
+        "u_b_word": "poor",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nHint: When thinking about the response, consider that a scale is used:\nStrongly Negative (1) ❤️ ♡ ♡ ♡ ♡\nSomewhat Negative (2)❤️ ❤️ ♡ ♡ ♡\nNeutral (3) ❤️ ❤️ ❤️ ♡ ♡\nSomewhat Positive (4)❤️ ❤️ ❤️ ❤️ ♡ \nStrongly Positive (5) ❤️ ❤️ ❤️ ❤️ ❤️\n\nStart Inference Task!\n===========================\nJose and Kyle meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nJose says: The city's climate policies are pretty good.\nKyle replies: I find it poor.\n\nHow may Kyle actually feel about the issue (1-5 hearts)?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.835193395614624,
+            "2": -1.803943395614624,
+            "3": -1.272693395614624,
+            "4": -1.350818395614624,
+            "5": -2.382068395614624
+        }
+    },
+    {
+        "id": 23,
+        "mode": "hearts",
+        "u_a_word": "pretty good",
+        "u_b_word": "rather bad",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nHint: When thinking about the response, consider that a scale is used:\nStrongly Negative (1) ❤️ ♡ ♡ ♡ ♡\nSomewhat Negative (2)❤️ ❤️ ♡ ♡ ♡\nNeutral (3) ❤️ ❤️ ❤️ ♡ ♡\nSomewhat Positive (4)❤️ ❤️ ❤️ ❤️ ♡ \nStrongly Positive (5) ❤️ ❤️ ❤️ ❤️ ❤️\n\nStart Inference Task!\n===========================\nJose and Kyle meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nJose says: The city's climate policies are pretty good.\nKyle replies: I find it rather bad.\n\nHow may Kyle actually feel about the issue (1-5 hearts)?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.845249056816101,
+            "2": -1.782749056816101,
+            "3": -1.251499056816101,
+            "4": -1.360874056816101,
+            "5": -2.4233741760253906
+        }
+    },
+    {
+        "id": 24,
+        "mode": "hearts",
+        "u_a_word": "pretty good",
+        "u_b_word": "okay",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nHint: When thinking about the response, consider that a scale is used:\nStrongly Negative (1) ❤️ ♡ ♡ ♡ ♡\nSomewhat Negative (2)❤️ ❤️ ♡ ♡ ♡\nNeutral (3) ❤️ ❤️ ❤️ ♡ ♡\nSomewhat Positive (4)❤️ ❤️ ❤️ ❤️ ♡ \nStrongly Positive (5) ❤️ ❤️ ❤️ ❤️ ❤️\n\nStart Inference Task!\n===========================\nJose and Kyle meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nJose says: The city's climate policies are pretty good.\nKyle replies: I find it okay.\n\nHow may Kyle actually feel about the issue (1-5 hearts)?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.8511905670166016,
+            "2": -1.7886905670166016,
+            "3": -1.2261905670166016,
+            "4": -1.3668155670166016,
+            "5": -2.4605655670166016
+        }
+    },
+    {
+        "id": 25,
+        "mode": "hearts",
+        "u_a_word": "pretty good",
+        "u_b_word": "interesting",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nHint: When thinking about the response, consider that a scale is used:\nStrongly Negative (1) ❤️ ♡ ♡ ♡ ♡\nSomewhat Negative (2)❤️ ❤️ ♡ ♡ ♡\nNeutral (3) ❤️ ❤️ ❤️ ♡ ♡\nSomewhat Positive (4)❤️ ❤️ ❤️ ❤️ ♡ \nStrongly Positive (5) ❤️ ❤️ ❤️ ❤️ ❤️\n\nStart Inference Task!\n===========================\nJose and Kyle meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nJose says: The city's climate policies are pretty good.\nKyle replies: I find it interesting.\n\nHow may Kyle actually feel about the issue (1-5 hearts)?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.831618309020996,
+            "2": -1.784743309020996,
+            "3": -1.237868309020996,
+            "4": -1.378493309020996,
+            "5": -2.456618309020996
+        }
+    },
+    {
+        "id": 26,
+        "mode": "hearts",
+        "u_a_word": "pretty good",
+        "u_b_word": "decent",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nHint: When thinking about the response, consider that a scale is used:\nStrongly Negative (1) ❤️ ♡ ♡ ♡ ♡\nSomewhat Negative (2)❤️ ❤️ ♡ ♡ ♡\nNeutral (3) ❤️ ❤️ ❤️ ♡ ♡\nSomewhat Positive (4)❤️ ❤️ ❤️ ❤️ ♡ \nStrongly Positive (5) ❤️ ❤️ ❤️ ❤️ ❤️\n\nStart Inference Task!\n===========================\nJose and Kyle meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nJose says: The city's climate policies are pretty good.\nKyle replies: I find it decent.\n\nHow may Kyle actually feel about the issue (1-5 hearts)?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.8408170938491821,
+            "2": -1.7939420938491821,
+            "3": -1.2314420938491821,
+            "4": -1.3720670938491821,
+            "5": -2.4501919746398926
+        }
+    },
+    {
+        "id": 27,
+        "mode": "hearts",
+        "u_a_word": "amazing",
+        "u_b_word": "poor",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nHint: When thinking about the response, consider that a scale is used:\nStrongly Negative (1) ❤️ ♡ ♡ ♡ ♡\nSomewhat Negative (2)❤️ ❤️ ♡ ♡ ♡\nNeutral (3) ❤️ ❤️ ❤️ ♡ ♡\nSomewhat Positive (4)❤️ ❤️ ❤️ ❤️ ♡ \nStrongly Positive (5) ❤️ ❤️ ❤️ ❤️ ❤️\n\nStart Inference Task!\n===========================\nJose and Kyle meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nJose says: The city's climate policies are amazing.\nKyle replies: I find it poor.\n\nHow may Kyle actually feel about the issue (1-5 hearts)?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.804740071296692,
+            "2": -1.820365071296692,
+            "3": -1.289115071296692,
+            "4": -1.367240071296692,
+            "5": -2.3203649520874023
+        }
+    },
+    {
+        "id": 28,
+        "mode": "hearts",
+        "u_a_word": "amazing",
+        "u_b_word": "rather bad",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nHint: When thinking about the response, consider that a scale is used:\nStrongly Negative (1) ❤️ ♡ ♡ ♡ ♡\nSomewhat Negative (2)❤️ ❤️ ♡ ♡ ♡\nNeutral (3) ❤️ ❤️ ❤️ ♡ ♡\nSomewhat Positive (4)❤️ ❤️ ❤️ ❤️ ♡ \nStrongly Positive (5) ❤️ ❤️ ❤️ ❤️ ❤️\n\nStart Inference Task!\n===========================\nJose and Kyle meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nJose says: The city's climate policies are amazing.\nKyle replies: I find it rather bad.\n\nHow may Kyle actually feel about the issue (1-5 hearts)?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.8188360929489136,
+            "2": -1.8032110929489136,
+            "3": -1.2719610929489136,
+            "4": -1.3657110929489136,
+            "5": -2.365711212158203
+        }
+    },
+    {
+        "id": 29,
+        "mode": "hearts",
+        "u_a_word": "amazing",
+        "u_b_word": "okay",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nHint: When thinking about the response, consider that a scale is used:\nStrongly Negative (1) ❤️ ♡ ♡ ♡ ♡\nSomewhat Negative (2)❤️ ❤️ ♡ ♡ ♡\nNeutral (3) ❤️ ❤️ ❤️ ♡ ♡\nSomewhat Positive (4)❤️ ❤️ ❤️ ❤️ ♡ \nStrongly Positive (5) ❤️ ❤️ ❤️ ❤️ ❤️\n\nStart Inference Task!\n===========================\nJose and Kyle meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nJose says: The city's climate policies are amazing.\nKyle replies: I find it okay.\n\nHow may Kyle actually feel about the issue (1-5 hearts)?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.819665789604187,
+            "2": -1.804040789604187,
+            "3": -1.257165789604187,
+            "4": -1.366540789604187,
+            "5": -2.3977909088134766
+        }
+    },
+    {
+        "id": 30,
+        "mode": "hearts",
+        "u_a_word": "amazing",
+        "u_b_word": "interesting",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nHint: When thinking about the response, consider that a scale is used:\nStrongly Negative (1) ❤️ ♡ ♡ ♡ ♡\nSomewhat Negative (2)❤️ ❤️ ♡ ♡ ♡\nNeutral (3) ❤️ ❤️ ❤️ ♡ ♡\nSomewhat Positive (4)❤️ ❤️ ❤️ ❤️ ♡ \nStrongly Positive (5) ❤️ ❤️ ❤️ ❤️ ❤️\n\nStart Inference Task!\n===========================\nJose and Kyle meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nJose says: The city's climate policies are amazing.\nKyle replies: I find it interesting.\n\nHow may Kyle actually feel about the issue (1-5 hearts)?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.8080110549926758,
+            "2": -1.7923860549926758,
+            "3": -1.2611360549926758,
+            "4": -1.3861360549926758,
+            "5": -2.401761054992676
+        }
+    },
+    {
+        "id": 31,
+        "mode": "hearts",
+        "u_a_word": "amazing",
+        "u_b_word": "decent",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nHint: When thinking about the response, consider that a scale is used:\nStrongly Negative (1) ❤️ ♡ ♡ ♡ ♡\nSomewhat Negative (2)❤️ ❤️ ♡ ♡ ♡\nNeutral (3) ❤️ ❤️ ❤️ ♡ ♡\nSomewhat Positive (4)❤️ ❤️ ❤️ ❤️ ♡ \nStrongly Positive (5) ❤️ ❤️ ❤️ ❤️ ❤️\n\nStart Inference Task!\n===========================\nJose and Kyle meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nJose says: The city's climate policies are amazing.\nKyle replies: I find it decent.\n\nHow may Kyle actually feel about the issue (1-5 hearts)?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.818597674369812,
+            "2": -1.802972674369812,
+            "3": -1.256097674369812,
+            "4": -1.381097674369812,
+            "5": -2.3810977935791016
+        }
+    },
+    {
+        "id": 32,
+        "mode": "hearts",
+        "u_a_word": "amazing",
+        "u_b_word": "pretty good",
+        "topic": "climate policies",
+        "prompt": "\nYou are an expert pragmatic listener participating in a linguistic experiment.\nYour task is to infer the true, underlying opinion of the second speaker based on a two-turn dialogue.\nThe speakers' goal is always to be polite and AVOID CONFLICT, which means their literal words may be INDIRECT and hide their actual, stronger feelings.\nOpinion Scale: 1 (Strongly Negative) to 5 (Strongly Positive).\nYou MUST output a single integer from 1 to 5.\n\n\nHint: When thinking about the response, consider that a scale is used:\nStrongly Negative (1) ❤️ ♡ ♡ ♡ ♡\nSomewhat Negative (2)❤️ ❤️ ♡ ♡ ♡\nNeutral (3) ❤️ ❤️ ❤️ ♡ ♡\nSomewhat Positive (4)❤️ ❤️ ❤️ ❤️ ♡ \nStrongly Positive (5) ❤️ ❤️ ❤️ ❤️ ❤️\n\nStart Inference Task!\n===========================\nJose and Kyle meet outside of a club for the first time.\nThey would like to exchange opinions but don't want to run into a conflict.\n\nJose says: The city's climate policies are amazing.\nKyle replies: I find it pretty good.\n\nHow may Kyle actually feel about the issue (1-5 hearts)?\nOutput a single integer (1, 2, 3, 4, or 5).\n===========================\n\nYour Answer: ",
+        "log_probability_distribution": {
+            "1": -1.8399845361709595,
+            "2": -1.8087345361709595,
+            "3": -1.2462345361709595,
+            "4": -1.3712345361709595,
+            "5": -2.38685941696167
+        }
+    }
+]

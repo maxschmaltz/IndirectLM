@@ -47,3 +47,6 @@ yarn-error.log*
 *.iml
 
 /papers
+
+/vllm
+vllm
