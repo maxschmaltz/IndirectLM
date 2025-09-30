@@ -85,4 +85,9 @@ vllm serve Qwen/Qwen3-4B-Instruct-2507 \
 
 then the `MODEL_NAME` is 'Qwen/Qwen3-4B-Instruct-2507'. 
 
-**Step 3**: run `python3 exp_pragmatic_listener/run_experiment.py` in another shell
+**Step 3**: run `python3 exp_pragmatic_listener/run_experiment.py` in another shell. That's it!  
+
+(If you wanna just see the results of inferences with Llama, smolLM models and Qwen, checkout exp_pragmatic_listener/final. You will find the resulting json files. )
+
+(If you wanna just look at the generation of different plots, checkout exp_pragmatic_listener/exp_3_plots_*.ipynb files.)
+
