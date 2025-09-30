@@ -50,7 +50,7 @@ vllm serve meta-llama/Llama-3.2-1B \
 
 ### Speaker Experiment
 
-To reproduce the Speaker Experiment, run the main function of [speaker_experiment.py](run_experiments/speaker_experiment/speaker_experiment.py) from the root of the repository:
+To reproduce the Pragmatic Speaker Experiment, run the main function of [speaker_experiment.py](run_experiments/speaker_experiment/speaker_experiment.py) from the root of the repository:
 
 ```
 import asyncio
@@ -66,5 +66,23 @@ Make sure to have set the `MODEL_NAME` constant in [utils.py](run_experiments/ut
 The experiment will run 5-15 hours depending on the model. The results will be saved in the folder [data/out](data/out) under name `prompts_speaker_exp_<short_model_name>`.
 
 ### Pragmatic Listener Experiment
+To reproduce the Pragmatic Listener Experiment, 
 
-TODO
+**Prerequisites (step 1 and 2)**: 
+
+**Step 1**: run the vllm server with you favourable model 
+
+**Step 2**: change the MODEL_NAME variable in exp_pragmatic_listener/run_experiment.py file with the model you are running on vllm. 
+
+For example if you run 
+```
+vllm serve Qwen/Qwen3-4B-Instruct-2507 \
+  --max-model-len 512 \
+  --max-num-batched-tokens 512 \
+  --port 8000 \
+  --host 0.0.0.0
+```
+
+then the `MODEL_NAME` is 'Qwen/Qwen3-4B-Instruct-2507'. 
+
+**Step 3**: run `python3 exp_pragmatic_listener/run_experiment.py` in another shell
