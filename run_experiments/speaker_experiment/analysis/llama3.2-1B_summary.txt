@@ -1,0 +1,15 @@
+Overall Cohen's kappa between golds and preds: 0.006
+
+
+Z-scores and p-values for the effect of opinions match/mismatch on the proportion of indirect responses, by conversational goal:
+conversational goal  total number of responses, opinions match  proportion of indirect responses, opinions match  total number of responses, opinions mismatch  proportion of indirect responses, opinions mismatch    z-stat  p-value
+             social                                         76                                          0.506667                                            92                                             0.567901 -1.084030 0.278352
+              mixed                                         74                                          0.480519                                           105                                             0.570652 -1.653426 0.098244
+      informational                                         90                                          0.532544                                            95                                             0.590062 -1.052314 0.292656
+
+
+Z-scores and p-values for the effect of polarity (strongly negative vs. strongly positive) on the proportion of indirect responses, by conversational goal:
+conversational goal  total number of responses, opinions match  proportion of indirect responses, opinions match  total number of responses, opinions mismatch  proportion of indirect responses, opinions mismatch     z-stat      p-value
+             social                                          9                                          0.058824                                           159                                                  1.0 -16.670812 2.136727e-62
+              mixed                                          7                                          0.042169                                           172                                                  1.0 -17.637644 1.266313e-69
+      informational                                          9                                          0.058442                                           176                                                  1.0 -17.192977 2.997388e-66
