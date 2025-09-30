@@ -1,11 +1,11 @@
 import aiohttp
 import asyncio
 
-semaphore = asyncio.Semaphore(64)  # limit concurrent requests
+semaphore = asyncio.Semaphore(32)  # limit concurrent requests
 
 # running vLLM, make sure to have completed the setup steps in README.md
 BASE_URL = "http://0.0.0.0:8000/v1"
-MODEL_NAME = "meta-llama/Llama-3.2-1B" # "Qwen/Qwen2.5-1.5B-Instruct"  # "Qwen/Qwen3-8B"
+MODEL_NAME = "HuggingFaceTB/SmolLM-360M"   # "meta-llama/Llama-3.2-1B"  # "Qwen/Qwen3-8B"
 
 
 async def get_last_token_prob(prompt_text: str) -> tuple[str, float]:
