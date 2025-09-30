@@ -79,6 +79,8 @@
 
 \begin{abstract}
 Human language understanding relies heavily not only on the linguistic meaning of the perceived language signs, but also on a large set of extra-linguistic notions, beliefs, immediate contextual cues, and much more. Many attempts have been made to build a model of human communication that would include these pragmatic factors. In particular, \citet{achimova-2025} suggest that the choice of the utterance is actively affected by the speaker’s belief about the listener’s opinion on the conversation topic and confirms this hypothesis with experiments with human participants. We aim at investigating to what extent this behavior is transmitted to language models (LMs). We report a noticeable correlation between the size of the model and the extent to which it acquires the investigated behavioral pattern. We find that smaller LMs are incapable of replicating the discussed indirect speech tendency, while larger models show some initial yet promising results in that direction.
+
+Link to project repository: \href{https://github.com/maxschmaltz/IndirectLM}{github.com/maxschmaltz/IndirectLM}
 \end{abstract}
 
 
@@ -92,7 +94,7 @@ Many attempts have been made to build a model of human communication that would 
 
 Conversely, \citet{achimova-2025} suggest that the choice of the utterance is actively affected by the speaker’s belief about the listener’s opinion on the conversation topic. They hypothesize that when the opinions of the participants of the dialogue do not match, the speaker tends to choose utterances that would prioritize not contradicting the listener's opinion rather than expressing own speaker's opinion. They develop a novel model called \textit{AMIC} (Alignment Model of Indirect Communication) that accounts for the match/mismatch of the opinions of the dialogue participants. \citet{achimova-2025} conduct a set of empirical experiments with human participants that support the hypothesis. The key finding of the paper is that \textit{the speakers produce more indirect speech when there is a conflict of opinions}.
 
-Given this promising finding, we aimed at investigating to what extent this behavior is transmitted to language models (LMs)\footnote{In this study, we focused on the latest generative transformer-based language models since they have shown unprecedented advances in language modeling technology.} that have been argued to acquire some patterns of human behavior from the training data \citep{hashemi-2025}. More specifically, we investigated whether LMs acquire the same tendency to incline towards indirect speech when a conflict of opinions is possible. For that purpose, we replicated the original experiments 2 (\textit{Speaker Experiment}) and 3 (\textit{Pragmatic Listener Experiment}) from \citet{achimova-2025}. We utilized LMs of size 360M to 4B parameters to simulate the human participants from the original experiments, and ran a set of statistical test over the experimental outcomes to interpret the results. We found a noticeable correlation between the size of the model and the extent to which it acquires the investigated behavioral pattern. The main finding of our study is that smaller LMs are incapable of replicating the discussed indirect speech tendency, while larger models show some initial yet promising results in that direction.
+Given this promising finding, we aimed at investigating to what extent this behavior is transmitted to language models (LMs)\footnote{In this study, we focused on the latest generative transformer-based language models since they have shown unprecedented advances in language modeling technology.} that have been argued to acquire some patterns of human behavior from the training data \citep{hashemi-2025}. More specifically, we investigated whether LMs acquire the same tendency to incline towards indirect speech when a conflict of opinions is possible. For that purpose, we replicated the original experiments 2 (\textit{Pragmatic Speaker Experiment}) and 3 (\textit{Pragmatic Listener Experiment}) from \citet{achimova-2025}. We utilized LMs of size 360M to 4B parameters to simulate the human participants from the original experiments, and ran a set of statistical test over the experimental outcomes to interpret the results. We found a noticeable correlation between the size of the model and the extent to which it acquires the investigated behavioral pattern. The main finding of our study is that smaller LMs are incapable of replicating the discussed indirect speech tendency, while larger models show some initial yet promising results in that direction.
 
 
 \section{Methods}
@@ -105,7 +107,7 @@ We structure this section the following way: 1) first, the original experiments 
 
 The original experiments from \citet{achimova-2025} were designed to evaluate the main hypothesis that humans tend to choose indirect utterances in the situation of possible opinion conflict, as well as compare the empirical data from human participants with the predictions from the AMIC model. The experiments investigated the phenomenon from two perspectives.
 
-In the \textit{Speaker Experiment}, 98 participants were given trials where a topic, the opinions of the speaker and the listener on this topic, and the communicative goal of the speaker were given. Three communicative goals were presented: informational --- directly share the opinion, social --- avoid possible conflict, and mixed --- share the opinion while trying to avoid possible conflict. The goal of the participant was to choose the most appropriate utterance for the speaker from a predefined set, corresponding to possible evaluations of the suggested topic from strongly negative to strongly positive. Thus, the effect of the opinions match/mismatch and the communicative goal on the choice of the utterance was investigated.
+In the \textit{Pragmatic Speaker Experiment}, 98 participants were given trials where a topic, the opinions of the speaker and the listener on this topic, and the communicative goal of the speaker were given. Three communicative goals were presented: informational --- directly share the opinion, social --- avoid possible conflict, and mixed --- share the opinion while trying to avoid possible conflict. The goal of the participant was to choose the most appropriate utterance for the speaker from a predefined set, corresponding to possible evaluations of the suggested topic from strongly negative to strongly positive. Thus, the effect of the opinions match/mismatch and the communicative goal on the choice of the utterance was investigated.
 
 The outcome of this experiment demonstrated that the participants indeed conformed to the expected tendency. Even though no significant difference were found between the answers with the mixed and social goals, both these goals gave rise to statistically more indirect speech than the informational goal.
 
@@ -123,7 +125,7 @@ As mentioned in section 1 \nameref{sec:intro}, we replicated (with suitable adju
 
 The original experiments featured 10 distinct topics ranging from politically charged (e.g., \textit{immigration laws}) to social issues (e.g., \textit{animal rights}). These topics provided the conversational context for the dialogues. The speakers latent opinions were formulated on a scale 1 to 5 and were visually represented as a number of hearts corresponding to the opinion from 1 being strongly negative to 5 being strongly positive. For a more pronounced contrast, only 1 or 5 were used as the possible opinions. The resulting utterances featured valuation adjectives. There were 10 possible valuation adjectives, two for each point of the 5-point scale.
 
-For the Speaker Experiment, the combinations of opinion match/mismatch, negative (1) / positive (5) speaker's opinion, and one of the three commutative goals formed a space of 12 possible design cells. For each of the participants, 10 combinations were sampled and were coupled with 10 possible topics randomly. Since answers from 7 participants were discarded, 91 $\times$ 10 = 910 vignettes were generated for the experiments in total.
+For the Pragmatic Speaker Experiment, the combinations of opinion match/mismatch, negative (1) / positive (5) speaker's opinion, and one of the three commutative goals formed a space of 12 possible design cells. For each of the participants, 10 combinations were sampled and were coupled with 10 possible topics randomly. Since answers from 7 participants were discarded, 91 $\times$ 10 = 910 vignettes were generated for the experiments in total.
 
 For the Pragmatic Listener experiment, 32 unique adjective combinations corresponding to combinations of the utterances of the first and the second speaker were collected. For each participants, 6 trials with randomly sampled combinations were run. Data from 12 participants were excluded from the analysis, and so 274 $\times$ 6 = 1644 vignettes were generated.
 
@@ -131,7 +133,7 @@ The experimental vignettes for the two experiments are accessible under \url{htt
 
 % The core ambiguity originated from the 32 unique adjective combinations designed to test the limits of polite interpretation. These 32 combinations were created by crossing two distinct sets of adjectives ($6\times 6$), and then systematically excluding the 4 pairs where the First Speaker's adjective ($u_{A}$) perfectly matched the Second Speaker's reply ($u_{B}$), such as "poor" vs. "poor."
 
-For our experimentations with LMs, we reproduced the vignettes for the two experiments as input prompts for LMs. For the Speaker Experiment, the original vignettes were reproduced, resulting in 910 vignettes. Each vignette featured the participant profile for the LM to model. Our approach to collection of the data for the Pragmatic Listener Experiment was slightly different: we crossed the 32 possible adjectives combinations with the 10 topics, thus producing 320 vignettes, to cover the entire possible combination space. These vignettes were de-personified. With that, we wanted to investigate the effect of space exploration as well as profile assignment on the LMs' judgements.
+For our experimentations with LMs, we reproduced the vignettes for the two experiments as input prompts for LMs. For the Pragmatic Speaker Experiment, the original vignettes were reproduced, resulting in 910 vignettes. Each vignette featured the participant profile for the LM to model. Our approach to collection of the data for the Pragmatic Listener Experiment was slightly different: we crossed the 32 possible adjectives combinations with the 10 topics, thus producing 320 vignettes, to cover the entire possible combination space. These vignettes were de-personified. With that, we wanted to investigate the effect of space exploration as well as profile assignment on the LMs' judgements.
 
 Additionally, we duplicated the obtained vignette prompts with a small difference: instead of the hearts as used in the original experiments, we inserted plain text there (e.g. "strongly positive"). That served the purpose to test the robustness of LMs' interpretation against abstractness of the opinion formulation.
 
@@ -149,9 +151,9 @@ Two example prompts can be found in Appendix 1 \nameref{sec:appendix:prompts}.
 \subsection{Technical Setup}
 \label{sec:setup}
 
-Two models were utilized for the Speaker Experiment: SmolLM-360M (introduced in blogpost \url{https://huggingface.co/blog/smollm}) and Llama 3.2-1B \citep{grattafiori-2024}. The Pragmatic Listener Experiment expanded the line of the models and additionally ran SmolLM-1.7B-Instruct and Qwen3-4B \citep{yang-2025}. The models were pulled from HuggingFace and were run locally via a vLLM server \citep{kwon-2023}. 
+Two models were utilized for the Pragmatic Speaker Experiment: SmolLM-360M (introduced in blogpost \url{https://huggingface.co/blog/smollm}) and Llama 3.2-1B \citep{grattafiori-2024}. The Pragmatic Listener Experiment expanded the line of the models and additionally ran SmolLM-1.7B-Instruct and Qwen3-4B \citep{yang-2025}. The models were pulled from HuggingFace and were run locally via a vLLM server \citep{kwon-2023}. In this project, we describe the SmolLM models and the Llama model as small language models (360M - 1.7B parameters) and the Qwen3 model as a mid size language model. 
 
-The Speaker experiment was run on an Apple M3 24GB machine. The Pragmatic Listener experiment was run on Apple M4 24GB. The temperature was set to 0.0 and 0.001, respectively to ensure reproducibility. The experiments run for approx. 20-30 hours each (for all LMs combined).
+The Pragmatic Speaker experiment was run on an Apple M3 24GB machine. The Pragmatic Listener experiment was run on Apple M4 24GB. The temperature was set to 0.0 and 0.001, respectively to ensure reproducibility. The experiments run for approx. 20-30 hours each (for all LMs combined).
 
 
 \subsection{Experiment Reproduction}
@@ -159,10 +161,10 @@ The Speaker experiment was run on an Apple M3 24GB machine. The Pragmatic Listen
 
 We employed two different techniques for reproduction of the two experiments. The reason for that is that, as it will be discussed below in section 3 \nameref{sec:res}, the second experiment didn't produce plausible results, and we modified the method to try to mitigate the issue we faced.
 
-\subsubsection{Speaker Experiment}
+\subsubsection{Pragmatic Speaker Experiment}
 \label{sec:exp2}
 
-In the speaker experiment, we retrieved the token probability distributions over the five possible utterances (strongly negative to strongly positive) given the context of the two opinions and the speaker's communicative goal. The possible utterances were provided as a multiple option list A-E (see in Appendix 1 \nameref{sec:appendix:prompts}). The options A-E were inserted at the end of the prompt after "Your answer is ", and the post hoc token probabilities that the LM assigned to A/B/etc. were collected. Thus, the target LM's judgments about the probabilities of different utterances depending on the context were collected. The most probable option was taken as the model prediction. The reason we did not generate the most probable output with the LMs is because we hypothesized it would involve two risks: 1) that the LMs will be unfaithful to the utterance list suggested in the prompt; 2) that the additional format instructions would impact the LMs' generation.
+In the pragmatic speaker experiment, we retrieved the token probability distributions over the five possible utterances (strongly negative to strongly positive) given the context of the two opinions and the speaker's communicative goal. The possible utterances were provided as a multiple option list A-E (see in Appendix 1 \nameref{sec:appendix:prompts}). The options A-E were inserted at the end of the prompt after "Your answer is ", and the post hoc token probabilities that the LM assigned to A/B/etc. were collected. Thus, the target LM's judgments about the probabilities of different utterances depending on the context were collected. The most probable option was taken as the model prediction. The reason we did not generate the most probable output with the LMs is because we hypothesized it would involve two risks: 1) that the LMs will be unfaithful to the utterance list suggested in the prompt; 2) that the additional format instructions would impact the LMs' generation.
 
 
 \subsubsection{Pragmatic Listener Experiment}
@@ -170,7 +172,7 @@ In the speaker experiment, we retrieved the token probability distributions over
 
 % To test the LM's capacity for pragmatic inference, the human task was translated into a single, fully-crossed LLM inference pipeline focused on measuring the opinion inferencing capabilities of the language models when presented with the situations. The core of our methodology involved generating a total of \textbf{640 unique prompts}, which were derived from crossing the key linguistic variables of the original study. This entire set of prompts was run against fixed instances of different small language models, each evaluated individually and sequentially, which together served as our single "ideal" participant.
 
-As mentioned at the beginning of section 2 \nameref{sec:repr}, the results for the Speaker Experiment were not plausible, and so the Pragmatic Listener Experiment exploited a slightly different approach. Instead of the pos hoc token probabilities for the given option, we focused on the distribution over the vocabulary after the words "Your answer is ". To mitigate the two risks outlined at the end of Section 2.4.1 \nameref{sec:exp2}, we instructed the model to output a single integer (1, 2, 3, 4, or 5) representing the inferred opinion. % We also leveraged the inference engine to capture the raw log probability (logP) for the top 10 next tokens immediately following the prompt's final question. This was done so that the logP values of the other options, ("1", "2", "3", "4", "5") could be captured.
+As mentioned at the beginning of section 2 \nameref{sec:repr}, the results for the Pragmatic Speaker Experiment were not plausible, and so the Pragmatic Listener Experiment exploited a slightly different approach. Instead of the pos hoc token probabilities for the given option, we focused on the distribution over the vocabulary after the words "Your answer is ". To mitigate the two risks outlined at the end of Section 2.4.1 \nameref{sec:exp2}, we instructed the model to output a single integer (1, 2, 3, 4, or 5) representing the inferred opinion. % We also leveraged the inference engine to capture the raw log probability (logP) for the top 10 next tokens immediately following the prompt's final question. This was done so that the logP values of the other options, ("1", "2", "3", "4", "5") could be captured.
 Similarly to the previous experiment, the integer with the highest probability was taken as the prediction.
 
 % The prompt structure comprises of 4 parts. The system message, the mode hint, the dialogue and the output constraints.
@@ -195,7 +197,7 @@ Similarly to the previous experiment, the integer with the highest probability w
 \label{sec:res}
 
 
-\subsection{Speaker Experiment}
+\subsection{Pragmatic Speaker Experiment}
 
 The smallest model SmolLM-360M produced predictions, corresponding to the strong positive utterance, in all of the cases. Its results are thus implausible and were therefore discarded.
 
@@ -204,7 +206,7 @@ Llama3.1-1B, conversely, produced "strong negative" in almost all the times, bot
 \begin{figure*}[t]
     \centering
     \includegraphics[width=0.7\textwidth]{plots/speaker_experiment/llama3.2-1B_distribution}
-    \caption{\textbf{Distribution of predictions on the Speaker Experiment for Llama3.2-1B.}}
+    \caption{\textbf{Distribution of predictions on the Pragmatic Speaker Experiment for Llama3.2-1B.}}
     \label{fig:exp2-overall}
 \end{figure*}
 
@@ -261,14 +263,6 @@ Since the LM mostly produced 1's, it is expected that its answers will mostly be
 
 Our replication of the pragmatic listener experiment shows a dependency on model size for successful social inference. The small models fail to recognize the nuances of human interaction output. We fail to get a negative monotonic slope, especially in the small language models, though the mid-sized model is more promising in detecting the conflicting context.
 
-% \begin{figure}[h]
-%     \centering
-%     \includegraphics[width=0.7\textwidth]{plots/llama_aggregated.png} \\[1em]
-%     \includegraphics[width=0.7\textwidth]{plots/smol1b_aggregated.png} \\[1em]
-%     \includegraphics[width=0.7\textwidth]{plots/smol360_aggregated.png}
-%     \caption{Lorem Ipsum.}
-%     \label{fig:aggregated-plots}
-% \end{figure}
 
 \begin{figure*}[t]
     \centering
@@ -310,7 +304,7 @@ Many per-topic panels show non-zero slopes, proving the model is \textit{trying}
 \begin{figure*}[p] % h = here, t = top, b = bottom, p = page
     \centering
     \includegraphics[width=0.5\textwidth]{plots/qwen_per_topic.png}
-    \caption{The plots show the Mean Inferred Opinion (Y-axis) for Qwen 4B across 10 topics. Unlike smaller models (Llama, SmolLLM), Qwen breaks the flat-line bias and shows high variability, indicating some capacity to detect conflicting social context. However, most lines are erratic and non-monotonic, revealing a lack of robust hierarchical reasoning for reliable social inference even at this scale.}
+    \caption{\textbf{Topicwise Mean Inferred Opinion}: The plots show the Mean Inferred Opinion (Y-axis) for Qwen 4B across 10 topics. Unlike smaller models (Llama, SmolLLM), Qwen breaks the flat-line bias and shows high variability, indicating some capacity to detect conflicting social context. However, most lines are erratic and non-monotonic, revealing a lack of robust hierarchical reasoning for reliable social inference even at this scale.}
     \label{fig:qwen-aggregated-plot}
 \end{figure*}
 
@@ -319,28 +313,45 @@ This indicates that at the 4B parameters mark, the reasoning capacity is emergin
 \begin{figure*}[t] % h = here, t = top, b = bottom, p = page
     \centering
     \includegraphics[width=0.7\textwidth]{plots/qwen_log_prob.png}
-    \caption{\textbf{Purple: with hearts; Green: Plaintext}
+    \caption{\textbf{Qwen: Average Probability Distribution accross all 10 topics}
+    (Purple: with hearts; Green: Plaintext))
     The grid displays the average probability distribution ($P_i$) for every unique scenario, aggregated across all 10 topics. The red dashed line marks the Mean Inferred Opinion. Labels denote the topic name and the rank (integer score) of $u_a$ and $u_b$. }
     \label{fig:qwen-log-prob}
 \end{figure*}
 
 
 \section{Discussion \& Conclusion}
-...
 
-PLAN
-1. Summary: small ones such, bigger better. 
-2. Hypothesis: small ones are bad because they cannot handle longer contexts and fall for an intermediate option, e.g. the first or the last one
-3. SmolLM fucks up always, Llama3.2 shows a small bit of tendency (see in the end of 3.1), Qwen3 is much better ==> Hypothesis: we anticipate that big models will exhibit the tendency
-4. Due to the limitations on compute resources, we now limit ourselves to these small models, but it would be interesting to expend the study in a further iteration. 
+This study investigated whether transformer-based language models replicate the human tendency toward indirect communication in situations of potential opinion conflict. We replicated the Speaker and Pragmatic Listener experiments from Achimova et al. (2025), testing models ranging from 360M to 4B parameters on their ability to perform social and pragmatic inference.
+Our investigation reveals that model size directly correlates with the ability to perform complex social inference. Smaller models consistently fail at these tasks, while mid-sized models show nascent but unstable capacity for pragmatic reasoning.
 
-FINALLY:
-1. clean repo
-2. pull
-3. update README with an instruction to run your exp
-4. put src and PDF to the repo
-5. push
-6. submit
+SmolLM-360M and SmolLM-1.7B failed to replicate human behavioral patterns. SmolLM-360M produced only strong positive utterances in the Pragmatic Speaker Experiment and exhibited persistent negativity bias ($\approx 2.65$) in the Pragmatic Listener Experiment. SmolLM-1.7B showed a fixed positive bias ($\approx 3.7$). Both models' responses remained invariant to contextual cues, demonstrating inability to process the interplay between linguistic evidence and social goals.
+
+Llama 3.2-1B showed mixed results. In the Pragmatic Speaker Experiment, it predominantly produced "strong negative" responses, with the overall effect of opinion match/mismatch being insignificant across all communicative goals (p > 0.22). However, when the speaker held a strongly negative opinion in a mismatch setting, Llama 3.2-1B showed a significant increase in indirect responses from informational to social goals (z = 2.81, p = 0.005), exhibiting the very beginning of tendency acquisition in this specific configuration. In the Pragmatic Listener Experiment, it demonstrated strong neutrality bias ($\approx 2.95$), though subtle variations hint at emerging contextual processing capacity.
+
+Qwen 4B represents a qualitative leap. It breaks free from flat-line biases and demonstrates variable, context-dependent responses, successfully detecting conflicting contexts between speakers' utterances. However, outputs remain unstable and frequently incorrect—often producing positive slopes where negative ones are required, or exhibiting erratic fluctuations. This pragmatic instability indicates that reasoning capacity is emerging but remains prone to systematic errors.
+
+We hypothesize that smaller models fail due to: (1) insufficient capacity to maintain longer contextual dependencies required for multi-layered pragmatic reasoning, and (2) tendency to resort to heuristic shortcuts (always neutral, negative, or positive) rather than computing context-sensitive responses. The progressive improvement from SmolLM through Llama 3.2-1B to Qwen 4B suggests a scaling relationship between parameters and pragmatic reasoning abilities, leading us to anticipate that substantially larger models would exhibit more robust alignment with human pragmatic communication patterns.
+
+Computational constraints restricted our investigation to models up to 4B parameters. Future work should test larger-scale models (7B, 13B, 70B+ parameters) to validate our scaling hypothesis. Additionally, systematic analysis of prompt formulations, fine-tuning approaches targeting social reasoning, and intermediate training checkpoints could show how these capabilities develop.
+
+In conclusion, the acquisition of human-like indirect communication patterns in language models is strongly parameter-dependent. Small models systematically fail, defaulting to fixed response patterns. Mid-sized models show promising signs of emerging competence with active contextual processing, albeit with significant instability. This pattern shows that scaling the number of paramters of the model, can result in better pragmatic abilities, leading to better understanding of nuances in daily human conversations. 
+
+This progression suggests that advanced pragmatic reasoning—requiring integration of linguistic context, social goals, and theory-of-mind capabilities—represents a frontier capability in language model development that emerges gradually with scale.
+
+% PLAN
+% 1. Summary: small ones such, bigger better. 
+% 2. Hypothesis: small ones are bad because they cannot handle longer contexts and fall for an intermediate option, e.g. the first or the last one
+% 3. SmolLM fucks up always, Llama3.2 shows a small bit of tendency (see in the end of 3.1), Qwen3 is much better ==> Hypothesis: we anticipate that big models will exhibit the tendency
+% 4. Due to the limitations on compute resources, we now limit ourselves to these small models, but it would be interesting to expend the study in a further iteration. 
+
+% FINALLY:
+% 1. clean repo
+% 2. pull
+% 3. update README with an instruction to run your exp
+% 4. put src and PDF to the repo
+% 5. push
+% 6. submit
 
 
 
