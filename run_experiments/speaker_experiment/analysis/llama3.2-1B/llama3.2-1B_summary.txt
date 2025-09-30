@@ -1,18 +1,61 @@
-Overall chi-squared statistic between golds and preds: 926.494, with p-value: 0.000
+OVERALL DISTRIBUTIONS
 
 
-Overall Cohen's kappa between golds and preds: 0.006
+Overall chi-squared statistic between golds and preds, plain: 919.560, with p-value: 0.000
+Overall chi-squared statistic between golds and preds, hearts: 802.026, with p-value: 0.000
 
 
-Z-scores and p-values for the effect of opinions match/mismatch on the proportion of indirect responses, by conversational goal:
+Overall Cohen's kappa between golds and preds, plain: 0.006
+Overall Cohen's kappa between golds and preds, hearts: 0.028
+
+
+
+EFFECT OF MATCH/MISMATCH
+
+Z-scores and p-values for the effect of opinions match/mismatch on the proportion of indirect responses, by conversational goal, plain:
 conversational goal  total number of responses, opinions match  proportion of indirect responses, opinions match  total number of responses, opinions mismatch  proportion of indirect responses, opinions mismatch    z-stat  p-value
-             social                                         76                                          0.506667                                            92                                             0.567901 -1.084030 0.278352
-              mixed                                         74                                          0.480519                                           105                                             0.570652 -1.653426 0.098244
-      informational                                         90                                          0.532544                                            95                                             0.590062 -1.052314 0.292656
+             social                                        150                                          0.506667                                           162                                             0.567901 -1.084030 0.278352
+              mixed                                        154                                          0.480519                                           184                                             0.570652 -1.653426 0.098244
+      informational                                        169                                          0.532544                                           161                                             0.590062 -1.052314 0.292656
 
 
-Z-scores and p-values for the effect of polarity (strongly negative vs. strongly positive) on the proportion of indirect responses, by conversational goal:
+Z-scores and p-values for the effect of opinions match/mismatch on the proportion of indirect responses, by conversational goal, hearts:
+conversational goal  total number of responses, opinions match  proportion of indirect responses, opinions match  total number of responses, opinions mismatch  proportion of indirect responses, opinions mismatch    z-stat  p-value
+             social                                        150                                          0.546667                                           162                                             0.586420 -0.708105 0.478880
+              mixed                                        154                                          0.493506                                           184                                             0.559783 -1.215793 0.224064
+      informational                                        169                                          0.514793                                           161                                             0.565217 -0.918593 0.358309
+
+
+
+EFFECT OF POLARITY
+
+
+Z-scores and p-values for the effect of polarity (strongly negative vs. strongly positive) on the proportion of indirect responses, by conversational goal, plain:
 conversational goal  total number of responses, strongly negative  proportion of indirect responses, strongly negative  total number of responses, strongly positive  proportion of indirect responses, strongly positive     z-stat      p-value
-             social                                             9                                             0.058824                                           159                                                  1.0 -16.670812 2.136727e-62
-              mixed                                             7                                             0.042169                                           172                                                  1.0 -17.637644 1.266313e-69
-      informational                                             9                                             0.058442                                           176                                                  1.0 -17.192977 2.997388e-66
+             social                                            75                                             0.066667                                            87                                                  1.0 -11.957534 5.929710e-33
+              mixed                                            84                                             0.059524                                           100                                                  1.0 -12.837728 1.007893e-37
+      informational                                            70                                             0.057143                                            91                                                  1.0 -12.058541 1.748521e-33
+
+
+Z-scores and p-values for the effect of polarity (strongly negative vs. strongly positive) on the proportion of indirect responses, by conversational goal, hearts:
+conversational goal  total number of responses, strongly negative  proportion of indirect responses, strongly negative  total number of responses, strongly positive  proportion of indirect responses, strongly positive     z-stat      p-value
+             social                                            75                                             0.106667                                            87                                                 1.00 -11.512300 1.143863e-30
+              mixed                                            84                                             0.047619                                           100                                                 0.99 -12.826670 1.162539e-37
+      informational                                            70                                             0.000000                                            91                                                 1.00 -12.688578 6.841708e-37
+
+
+Pairwise comparisons between conversational goals for strongly negative opinions, hearts:
+conversational goal A conversational goal B  total number of responses, strongly negative, A  proportion of indirect responses, strongly negative, A  total number of responses, strongly negative, B  proportion of indirect responses, strongly negative, B   z-stat  p-value
+               social                 mixed                                               75                                                0.106667                                               84                                                0.047619 1.407090 0.159401
+               social         informational                                               75                                                0.106667                                               70                                                0.000000 2.811170 0.004936
+                mixed         informational                                               84                                                0.047619                                               70                                                0.000000 1.849925 0.064324
+
+
+
+EFFECT OF WORDING
+
+
+Overall chi-squared statistic between golds and preds: 17.047, with p-value: 0.002
+
+
+Overall Cohen's kappa between golds and preds: 0.162
